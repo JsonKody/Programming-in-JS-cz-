@@ -1,10 +1,10 @@
-# promenne (variables):
+# Promenne (variables):
 - var (zastarale)
 - let
 - const
 
 
-# jmena promennych:
+# Jmena promennych:
 
 1. camelCase (doporucene) !snake_case, !PascalCase, !kebab-case
 2. pismena a cisla
@@ -15,22 +15,22 @@
 7. ! nesmi byt keyword (napr.: let let = 2)
 
 
-# typy: 
+# Typy: 
 - primitivni (primitive)
 - objektove (object)
 
 ## primitivni: 
-- Number (cislo)
-- String (text)
-- Boolean
+- number (cislo)
+- string (text)
+- boolean
 - undefined
 - BigInt
-- Symbol
+- symbol
 
 Typ muzeme poznat pomoci operatoru "typeof"
 
 ## undefined:
-Znamena jednodusse ze v promenne jeste (nebo uz) nic neni .. krabice je prazdna.
+Znamena jednoduse ze v promenne jeste (nebo uz) nic neni .. krabice je prazdna.
 
 ```
 let a
@@ -40,7 +40,7 @@ console.log(a)
 // -> undefined
 ```
 
-## String:
+## string:
 - umi se skladat (concatenate) pomoci operatoru '+'
 - ma ruzne metody jako napr. .toUpperCase() 
 - ma take vlastnosti (property) jako napr. .length (delka)
