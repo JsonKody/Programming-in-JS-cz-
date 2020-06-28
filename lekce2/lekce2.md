@@ -30,12 +30,14 @@
 Typ muzeme poznat pomoci operatoru "typeof"
 
 ## undefined:
-Znamena jednodusse ze v promenne jeste (nebo uz) nic neni
+Znamena jednodusse ze v promenne jeste (nebo uz) nic neni .. krabice je prazdna.
 
 ```
 let a
 
 console.log(a)
+
+// -> undefined
 ```
 
 ## String:
@@ -61,9 +63,29 @@ let zprava2 = `Ahoj, ja jsem ${ jmeno }.`
 V jinych jazycich vetsinou rozlisujeme jestli chceme cislo desetinne nebo cele. V JS mame jen typ Number v podstate na vsechno. Ve vzacnych pripadech se da pouzit jeste typ BigInt
 
 ## operatory:
-- +
-- -
-- *
-- /
-- %
+- \+ (plus, scitani)
+- \- (minus, odcitani)
+- \* (krat, nasobeni)
+- \/ (deleni)
+- %  (deleno modulo, zbytek)
+- ** (umocnovani, nove v ES6)
 
+operator prirazeni '=' se da zkombinovat s ostatnimi operatory pro pocitani:
+- +=
+- -=
+- *=
+- /=
+- %=
+- **=
+
+```
+let cislo = 4
+
+// takze misto
+cislo = cislo + 4
+
+// muzeme napsat
+cislo += 4
+```
+
+## Vsimete si ze operator '+' je trochu zvlastni protoze se pouziva jak ke 'scitani' Stringu (textu), tak cisel. Z pohledu programovani jsou to ovsem dve uplne odlisne operace.
