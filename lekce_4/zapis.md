@@ -194,6 +194,11 @@ Proto programatori vymysleli cykly. Mozna jste nekdy slysely slovo "iterace". Ja
 My si zatim vysvetlime jen jeden cyklus a to cyklus while().
 
 ```js
+while("podminka") {
+    // kod
+}
+
+// napr. nas posledni program
 while(true) {
     let pocetPismen = prompt("Napis neco, cokoliv:")
 
