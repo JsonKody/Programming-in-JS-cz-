@@ -1,5 +1,5 @@
 ## Priklad z minuleho dilu
-```
+```javascript
 // promenna a = 3, b = 8
 // zkuste jejich hodnoty prohodit bez toho abyste je primo napsali cislo
 
@@ -27,7 +27,7 @@ If podminky jsou jednim ze zakladnich stavebnich kamenu v podstate kazdeho progr
 
 Priklad if podminky:
 
-```
+```javascript
 // if podminku zapisujeme takto
 
 if("podminka") {
@@ -49,7 +49,7 @@ V podstate si teda muzeme if podminku rozdelit na tri casti:
 - slozene zavorky {} .. tomu rikame blok kodu a jeste si k nemu neco rekneme
 
 
-```
+```javascript
 // zkusime si napsat program, ktery zjisti 
 // kam patrime na zaklade naseho veku
 
@@ -67,7 +67,7 @@ if(vek > 15) {
 ```
 
 verze 2
-```
+```javascript
 // zkusime si napsat program, ktery zjisti 
 // kam patrime na zaklade naseho veku
 
@@ -87,7 +87,7 @@ if(vek > 15) {
 # if-else
 If-else je zpusob zapisu if podminky kdy se urcite neco provede. Budto se provede kod v podmince jinak se provede kod v 'else'.
 
-```
+```javascript
 let pohlavi = "zena"
 
 if(pohlavi == "muz") {
@@ -100,7 +100,7 @@ if(pohlavi == "muz") {
 # if-else-if
 Pokud chceme zretezit vice podminek za sebe tak aby se provedla jen jedna z nich.
 
-```
+```javascript
 let cas = 15
 
 if(cas < 10) {
@@ -115,7 +115,7 @@ if(cas < 10) {
 
 zamyslete se jaky je rozdil meszi if -> if -> if a treba if -> else if -> else if -> else
 
-```
+```javascript
 if("podminka") {
     // kod
 } else if("podminka") {

@@ -32,7 +32,7 @@ Typ muzeme poznat pomoci operatoru "typeof"
 ## undefined:
 Znamena jednoduse ze v promenne jeste (nebo uz) nic neni .. krabice je prazdna.
 
-```
+```javascript
 let a
 
 console.log(a)
@@ -51,7 +51,7 @@ String muzeme zapsat tremi zpusoby:
 - 'jednoduche uvozovky'
 - \`backtick .. tzv. template literal .. ${ promenna } \`
 
-```
+```javascript
 let jmeno   = "Karel Sivak"
 let zprava1 = "Ahoj, ja jsem " + jmeno + "."
 let zprava2 = `Ahoj, ja jsem ${ jmeno }.`
@@ -78,7 +78,7 @@ operator prirazeni '=' se da zkombinovat s ostatnimi operatory pro pocitani:
 - %=
 - **=
 
-```
+```javascript
 let cislo = 4
 
 // takze misto
