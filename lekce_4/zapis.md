@@ -205,3 +205,49 @@ while(true) {
     alert(`Zadali jste ${ pocetPismen.length } pismen.`)
 }
 ```
+
+
+Cyklus while je velmi jednoduchy cyklus na pochopeni.
+Zacina podminkou. Pokud podminka plati provede se kod v bloku.
+Pak program skoci zpatky k podmince. Pokud stale plati provede se kod v bloku. A tak porad dokola dokud plati podminka -> dokud se podminka vyhodnoti jako true -> dokud je while(true)
+
+POZOR: lehce se vam muze stat ze vytvorite tzv. nekonecny cyklus a to ve vetsine pripadu nechcete. Takovy cyklus potom muze uplne zaseknout program a zpusobit dalsi chyby jako napr. stack overflow
+
+
+# Block scope
+Promenne ktere vytvorime uvnitr bloku nejsou mimo blok 'videt'.
+Kod uvnitr bloku 'vidi' kod ktery je venku, ale naopak to neplati
+
+```js
+let zprava = "tajna zprava"
+
+if(true) {
+    let zprava2 = "tajnejsi zprava"
+    console.log(zprava)
+}
+
+console.log(zprava2)
+```
+
+Je to take proto ze s koncem bloku zanika vse co v nem vzniklo.
+Takze 'zprava2' byla vytvorena, nebyla pouzita a pak se znicila.
+Az potom uz davno za blokem se ji nejaky hlupak pokusil vypsat.
+
+
+## A ted trocha legrace
+Ukazu vam jak udelat program, ktery vas nepusti dal dokud neuhodnete heslo a naucime se novy 'keyword' -> break
+
+```js
+let heslo = 'veslo'
+
+while(true) {
+    let zadaneHeslo = prompt('Zadej heslo:')
+
+    if(zadaneHeslo === heslo) {
+        break
+    }
+}
+```
+
+
+*Jeste existuje 'continue' ktere podobne jako break meni chovani cyklu. Break cyklus rusi a continue 'preskoci' zbytek cyklu a jde znovu k podmince. Vice o tom v dalsich kapitolach*
