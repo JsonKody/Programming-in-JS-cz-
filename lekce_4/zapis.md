@@ -119,11 +119,11 @@ zamyslete se jaky je rozdil meszi if -> if -> if a treba if -> else if -> else i
 if("podminka") {
     // kod
 } else if("podminka") {
-    
+    // kod
 } else if("podminka") {
-
+    // kod
 } else {
-
+    // kod
 }
 
 // oproti
@@ -145,4 +145,58 @@ if("podminka") {
 } 
 ```
 
+# Poznamka ohledne stylu
+Mozna jste si vsimli ze kod pisi urcitym zpusobem, konzistentne (porad stejne) nekde vzdy davam mezeru, nekde novy radek a rikate si jestli je to potreba. Ano i ne. Neni to potreba (krome jazyka Python) aby kod fungoval jak ma, ale je to potreba abyste se v kodu vyznali vy a ostatni lide. 
 
+Tomu jak spravne formatovat kod nekdo rika 'stabni kultura' a je to soubor pravidel jak co zapisovat na kterych se dohodli programatori uz hodne davno, aby mohli spolecne pracovat na ruznych projektech a vyznali se v tom.
+
+Nasledujici kod funguje uplne stejne jako kod z posledniho prikladu,
+ale prase aby se v tom ... :)
+
+```javascript
+if("podminka"){// kod
+}if("podminka"){/*kod*/}if("podminka"){/*kod*/}if("podminka"){// kod
+} 
+```
+
+Napr. i 'camelCase' je soucasti stabni kultury a pokud vas zajima jestli jsou jen jedny pravidla jak vse psat tak ne :D
+Bohuzel je jich docela dost ruznych, casto podle jazyka nekde prevazilo to, nekde ono a tak se do dnesnich casu vedou svate valky jak co zapisovat. Ale celkove vzato jsou ty odlistnosti pomerne nicotne, v zakladu je to vse vicemene stejne jak vam ten kod ukazuji.
+
+A jeste na konec: kazdy znak tedy i mezera nebo 'novy radek' se musi zapsat tudiz zabira misto v kodu, tudiz zabira misto na disku a zvetsuje program. V praxi tedy velmi casto dochazi k tomu ze se kod, jeste pred spustenim "projede" a vymazou se vsechny zbytecne znaky, mezery, nove radky, prazdne radky, komentare, nekdy se i dlouha jmena promennych nahradi treba jednim pismenkem apod. tzv. minifikace a dale se pracuje s takovym kodem.
+
+
+# Nove funkce alert() & prompt()
+
+Funkce alert('zprava')
+otevere vyskakovaci okno v prohlizeci a zobrazi zpravu
+
+Funkce prompt()
+vyhodi vyskakovaci okenko s inputem a pripadne otazkou.
+Nasledne vrati string ktery uzivatel zapsal. Kdyz nic nezapsal,
+vrati proste prazdny string.
+
+```javascript
+let pocetPismen = prompt("Napis neco, cokoliv:")
+
+alert(`Zadali jste ${ pocetPismen.length } pismen.`)
+```
+
+Funkce si zatim muzete predstavit jako takove kouzlo z HP.
+Staci ho zapsat a pripadne mu predat nejaky argument a ona neco udela. 
+Zanedlouho si rekneme jak vytvaret vlastni kouzla, teda funkce.
+
+
+# Cyklus while()
+Pocitace jsou mnohem lepsi nez lide v rychlem zpracovavani obrovskeho mnozstvi dat, protoze jde casto o hodne repetitivni cinnost je dulezite abysme mohli pocitaci rict "delej tohle porad dokola dokud ..."
+
+Proto programatori vymysleli cykly. Mozna jste nekdy slysely slovo "iterace". Ja teda ne nez jsem zacal programovat, kazdopadne ted to pro vas bude uplne normalni slovo. Znamena totiz "opakovat" a je v programovani velmi bezne.
+
+My si zatim vysvetlime jen jeden cyklus a to cyklus while().
+
+```js
+while(true) {
+    let pocetPismen = prompt("Napis neco, cokoliv:")
+
+    alert(`Zadali jste ${ pocetPismen.length } pismen.`)
+}
+```
