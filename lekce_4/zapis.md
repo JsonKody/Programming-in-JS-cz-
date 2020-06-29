@@ -182,7 +182,7 @@ alert(`Zadali jste ${ pocetPismen.length } pismen.`)
 ```
 
 Funkce si zatim muzete predstavit jako takove kouzlo z HP.
-Staci ho zapsat a pripadne mu predat nejaky argument a ona neco udela. 
+Staci ji zapsat a pripadne mu predat nejaky argument a ona neco udela. 
 Zanedlouho si rekneme jak vytvaret vlastni kouzla, teda funkce.
 
 
