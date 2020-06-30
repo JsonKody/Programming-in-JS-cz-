@@ -29,9 +29,19 @@ Zapomel jsem ze funkce prompt muze take vratit hodnotu null pokud uzivatel klikn
 *Holandsky matematik a informatik. Znamy treba diky 'Dijkstrovu algoritmu' ktery hleda nejkratsi cestu v grafu. Kamarad mi rikal, ze Sapkowski po nem pojmenoval spiona Dijkstru ze sve sagy o Zaklinaci. Nevim jestli je to pravda, kazdopadne je to zajimave.*
 
 
-## dodatek k typy Number
+## Dodatek k typu Number
 Pokud chcete dopodrobna chapat jak tento typ funguje, vydalo by to na nekolik samostatnych lekci. Nam postaci vedet ze (stejne jako vetsina ciselnych typu ve vsech programovasich jazycich) cisla jsou omezena.
 Je urcite nejmensi a nejvetsi cislo, ktere muzeme zapsat. Take pocet desetinnych cisel je omezeny cca. na patnact s tim ze pri prevodu do pocitace, ktery vlastne interne pracuje s binarni soustavou muzou vznikat podivne bugy. Nemeli byste se tedy u desetinnych cisel spolehat na presnou hodnotu, ale spise porovnavat 'mensi' nebo 'vetsi'.
+
+```js
+// myslite ze nasledujici porovnani bude 'true'?
+0.1 + 0.2 == 0.3
+
+// -> false
+
+// protoze 0.1 + 0.2 rovna se 0.30000000000000004
+// to vi prece kazdy! :)
+```
 
 Typ number muze take nabyvat nekolika zvlastnich hodnot:
 - -0, +0
@@ -40,7 +50,7 @@ Typ number muze take nabyvat nekolika zvlastnich hodnot:
 
 NaN ma takovou zvlastnost a sice ze NaN != NaN
 
-## 'typeof'
+# 'typeof'
 'typeof' je dalsi ***unarni*** operator (ano operator, i kdyz se vetsina operatoru pise znakem, treb '+' jsou i operatory zapsane slovem)
 
 Pouziti:
@@ -77,6 +87,19 @@ Pozn.: casto se na skolach uci tzv. Vyrokova logika
 
 
 ```js
+true && false
+// → false
+true && true
+// → true
+
+false || true
+// → true
+false || false
+// → false
+```
+
+
+```js
 let a = 0
 let b = 0
 
@@ -108,5 +131,17 @@ a || b // -> true
 Vzorecky:
 ```js
 !(a && b) = !a || !b
+
 !a && !b = !(a || b)
 ```
+
+Tady si to vyskousime:
+```
+a  b    !(a && b)     !a || !b
+-------------------------------
+0  0        1            1
+0  1        1            1
+1  0        1            1
+1  1        0            0
+```
+
