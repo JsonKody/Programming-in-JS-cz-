@@ -89,6 +89,15 @@ typeof null
 ```
 
 
+## Co je to literal?!
+
+Literal je v podstate primo zapsana hodnota nejakeho typu.
+
+- Literal cisla muze byt treba 5
+- Literal stringu je treba "pseudokod"
+- Literal booleanu je treba false
+
+
 # Logika!
 Uff, tak a muzeme se vrhnout na tu slibenou logiku. V programovani je to jeden z nejdulezitejsich konceptu. Vychazi z matematiky, konkretne z Booleovy algebry.
 Pozn.: casto se na skolach uci tzv. Vyrokova logika
