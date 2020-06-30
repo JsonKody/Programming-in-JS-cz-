@@ -129,29 +129,29 @@ false || false
 
 
 ```js
-let a = 0
-let b = 0
+let a = false
+let b = false
 
 a && b // -> false
 a || b // -> false
 //------------------
 
-a = 0
-b = 1
+a = false
+b = true
 
 a && b // -> false
 a || b // -> true
 //------------------
 
-a = 1
-b = 0
+a = true
+b = false
 
 a && b // -> false
 a || b // -> true
 //------------------
 
-a = 1
-b = 1
+a = true
+b = true
 
 a && b // -> true
 a || b // -> true
