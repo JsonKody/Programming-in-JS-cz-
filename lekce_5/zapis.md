@@ -12,7 +12,15 @@ undefined
 null
 ```
 
-<img src="https://i1.wp.com/artdepartmental.com/wp-content/uploads/2099/07/Forrest-Gump-0296.jpg?fit=1014%2C419&ssl=1" width="500">
+Operator vs operator:
+- ==
+- ===
+
+Operator vs operator:
+- =
+- ==, ===
+
+
 
 V minule lekci jsme meli nasledujici program:
 ```js
