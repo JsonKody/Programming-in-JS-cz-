@@ -68,7 +68,7 @@ Math.pow(10, 1000)
 NaN ma takovou zvlastnost a sice ze NaN != NaN
 
 # 'typeof'
-'typeof' je dalsi ***unarni*** operator (ano operator, i kdyz se vetsina operatoru pise znakem, treb '+' jsou i operatory zapsane slovem)
+'typeof' je dalsi ***unarni*** operator (ano operator, i kdyz se vetsina operatoru pise znakem, treba '+' jsou i operatory zapsane slovem)
 
 Pouziti:
 ```js
