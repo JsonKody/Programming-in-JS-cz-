@@ -40,7 +40,7 @@ Zapomel jsem ze funkce prompt muze take vratit hodnotu null pokud uzivatel klikn
 
 
 ## Dodatek k typu Number
-Pokud chcete dopodrobna chapat jak tento typ funguje, vydalo by to na nekolik samostatnych lekci. Nam postaci vedet ze (stejne jako vetsina ciselnych typu ve vsech programovasich jazycich) cisla jsou omezena.
+Pokud chcete dopodrobna chapat jak tento typ funguje, vydalo by to na nekolik samostatnych lekci. Nam postaci vedet ze cisla jsou omezena (stejne jako vetsina ciselnych typu ve vsech programovasich jazycich).
 Je urcite nejmensi a nejvetsi cislo, ktere muzeme zapsat. Take pocet desetinnych cisel je omezeny cca. na patnact s tim ze pri prevodu do pocitace, ktery vlastne interne pracuje s binarni soustavou muzou vznikat podivne bugy. Nemeli byste se tedy u desetinnych cisel spolehat na presnou hodnotu, ale spise porovnavat 'mensi' nebo 'vetsi'.
 
 ```js
