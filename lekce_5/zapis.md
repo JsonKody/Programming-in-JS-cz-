@@ -46,9 +46,16 @@ Je urcite nejmensi a nejvetsi cislo, ktere muzeme zapsat. Take pocet desetinnych
 ```
 
 Typ number muze take nabyvat nekolika zvlastnich hodnot:
-- -0, +0
-- -infinity, +infinity
-- NaN (not a number)
+```js
+// -0, +0
+
+// -infinity, +infinity
+1 / 0
+Math.pow(10, 1000)
+
+// NaN (not a number)
+5 * "slunecko sedmitecne"
+```
 
 NaN ma takovou zvlastnost a sice ze NaN != NaN
 
@@ -89,6 +96,9 @@ Pozn.: casto se na skolach uci tzv. Vyrokova logika
 
 
 ```js
+// Ukazeme si funkci AND (&&) a OR (||) na vyrokove logice:
+// "Ahoj. Máš vajíčka A chleba?" ...
+
 true && false
 // → false
 true && true
@@ -147,3 +157,12 @@ a  b    !(a && b)     !a || !b
 1  1        0            0
 ```
 
+```js
+let cas = 12
+
+if(cas >= 12 && cas <= 20) {
+    console.log("Je nekdy mezi polednem a osmou hodinou")
+} else {
+    console.log("Je budto pred polednem, nebo po osme hodine.")
+}
+```
