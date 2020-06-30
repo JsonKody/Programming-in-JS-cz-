@@ -3,6 +3,8 @@
 
 ## ... ale jeste predtim ...
 
+*Posledne jsem rekl ze zminifikovany kod je mensi na disku, ale myslel jsem spise v pameti (tzn. operacni pameti). Takovy kod si vetsinou nikam neukladate (leda jako build) -> dulezite je ze zabira mene pameti*
+
 ## Prazdne hodnoty/typy:
 ```js
 undefined
@@ -77,7 +79,7 @@ Uff, tak a muzeme se vrhnout na tu slibenou logiku. V programovani je to jeden z
 Pozn.: casto se na skolach uci tzv. Vyrokova logika
 
 ![George Boole](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/George_Boole_color.jpg/225px-George_Boole_color.jpg)
-***George Boole*** [wikipedia](https://cs.wikipedia.org/wiki/George_Boole)
+***George Boole*** (1815 - 1864) [wikipedia](https://cs.wikipedia.org/wiki/George_Boole)
 *byl britský matematik a filosof, známý jako objevitel základů moderní aritmetiky, nazvané později Booleovou algebrou. Je díky tomu považován za zakladatele informatiky, ačkoli v jeho době nebylo o počítačích ani uvažováno.*
 
 
