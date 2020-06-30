@@ -4,8 +4,11 @@
 ## ... ale jeste predtim ...
 
 ## Prazdne hodnoty/typy:
-- undefined
-- null
+```js
+undefined
+
+null
+```
 
 <img src="https://i1.wp.com/artdepartmental.com/wp-content/uploads/2099/07/Forrest-Gump-0296.jpg?fit=1014%2C419&ssl=1" width="500">
 
@@ -60,4 +63,50 @@ typeof null
 
 
 # Logika!
-Uff, tak a muzeme se vrhnout na tu slibenou logiku. V programovani je to jeden z nejdulezitejsich konceptu. Vychazi z matematiky, konkretne z 
+Uff, tak a muzeme se vrhnout na tu slibenou logiku. V programovani je to jeden z nejdulezitejsich konceptu. Vychazi z matematiky, konkretne z Booleovy algebry.
+Pozn.: casto se na skolach uci tzv. Vyrokova logika
+
+![George Boole](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/George_Boole_color.jpg/225px-George_Boole_color.jpg)
+***George Boole*** [wikipedia](https://cs.wikipedia.org/wiki/George_Boole)
+*byl britský matematik a filosof, známý jako objevitel základů moderní aritmetiky, nazvané později Booleovou algebrou. Je díky tomu považován za zakladatele informatiky, ačkoli v jeho době nebylo o počítačích ani uvažováno.*
+
+
+![JS bool](https://benmccormick.org/static/6d15c0e5ac4df9209df25439414c2043/288d5/boolean-mappings.png)
+
+![Booleova algebra](https://slideplayer.cz/slide/2583158/9/images/1/Booleova+logika%28algebra%29.jpg)
+
+
+```js
+let a = 0
+let b = 0
+
+a && b // -> false
+a || b // -> false
+//------------------
+
+a = 0
+b = 1
+
+a && b // -> false
+a || b // -> true
+//------------------
+
+a = 1
+b = 0
+
+a && b // -> false
+a || b // -> true
+//------------------
+
+a = 1
+b = 1
+
+a && b // -> true
+a || b // -> true
+```
+
+Vzorecky:
+```js
+!(a && b) = !a || !b
+!a && !b = !(a || b)
+```
