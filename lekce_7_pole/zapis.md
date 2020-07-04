@@ -1,6 +1,6 @@
 # Pole
 
-Pole a objekty jsou 'slozitejsi' nebo 'objektove' datove typy. 'Datovy typ' zni hrozne profesionalne, ale nebojte je to v podstate jenom oznaceni typu -> veci o ktere mluvime. Treba o tekutinach nebo o domech ... a z toho nam plyne co s takovymi typy muzeme delat a to je jeden z duvodu proc je rozlisujeme v programovani.
+Pole a objekty jsou 'slozitejsi' nebo 'objektove' datove typy. 'Datovy typ' zni docela strasidelne, ale nebojte je to v podstate jenom oznaceni typu -> veci o ktere mluvime. Treba o tekutinach nebo o domech ... a z toho nam plyne co s takovymi typy muzeme delat a to je jeden z duvodu proc je rozlisujeme v programovani.
 
 Kazdemu je jasne ze typ 'tekutina' muzeme nalit do sklenice, ale typ 'dum' ne.
 
