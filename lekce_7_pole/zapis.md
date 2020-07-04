@@ -60,12 +60,12 @@ Literal pole se v JS zapisuje takto:
 [
     {
         jmeno: "Karel",
-        prijmni: "Sičák",
+        prijmeni: "Sičák",
         vek: 27
     },
     {
         jmeno: "Vojtech",
-        prijmni: "Fisher",
+        prijmeni: "Fisher",
         vek: 23
     }
 ]
