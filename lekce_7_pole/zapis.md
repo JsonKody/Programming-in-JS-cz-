@@ -215,3 +215,5 @@ zvirata.forEach(function(zvire) {
 // -> mezek
 // -> zelva
 ```
+
+A to je pro tuto lekci vse, uvidime se priste u Objektu ...
