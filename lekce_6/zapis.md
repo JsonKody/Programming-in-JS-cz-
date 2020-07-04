@@ -50,6 +50,13 @@ function simonRika(coRikaSimon) {
 
 Vidite ze jedna funkce muze volat spousty jinych funkci. Treba tady jsme si vytvorili funkci simonRika, ktera uvnitr sebe zavola funkci print a ta zavola funkci console.log
 
+```js
+simonRika("udelej kotrmelec")
+
+// -> Simon rika: udelej kotrmelec
+```
+
+
 ## return
 
 Nase funkce zatim nikdy nevratily zadnou hodnotu. Vzdy jen neco nekde udelaji a skonci. Zkusime si ted prepsat funkci simonRika tak, aby zpravu nevytiskl na konzoli, ale jen ji vratil.
