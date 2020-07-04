@@ -9,7 +9,7 @@ Dalsim duvodem je ze 'nejde' udelat jeden typ na vsechno. Proto mame typ string 
 Vime tedy ze number a string jsou tzv. primitivni datove typy a dneska si probereme slozitejsi/objektovy datovy typ -> Array (pole)
 
 
-Pozn.: obecne i v jinych jazycich ktere podporuji OOP se novy objekt vytvarit tak ze napiseme: 
+Pozn.: obecne i v jinych jazycich ktere podporuji OOP se novy objekt vytvori tak ze napiseme: 
 
 ```js 
 new JmenoObjektu()
