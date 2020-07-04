@@ -79,7 +79,7 @@ Pokud jde o pole, je dulezite vedet ze uchovava v podstate radu/retez nejakych h
 Z tohoto jazyka prebira JS (podobne jako vetsina dnesnich TOP programovacich jazyku) syntax(i). Vyhodou je ze naucenim se jednoho jazyka se zaroven ucite velkou cast dalsich jazyku.
 Pokud vas zajima jaky mam ja nazor na indexaci od nuly tak po objeveni a vyzkouseni jazyka Julia si myslim ze indexace od nuly je politovanihodny omyl se kterym, ale programatori musi zit.
 
-Btw zde je zajimavy clanek, o 'zero based index' kde se dozvime ze puvodne byla tato indexace zavedena nikoliv kvuli pointerove aritmetice, ale proto aby se lehce zkratil cas KOMPILACE! programu, protoze kdykoliv mohl zavolat reditel IBM z jachtoveho zavodu a vypnout vam probihajici program kvuli vypoctu handicapu.
+Btw zde je [zajimavy clanek, o 'zero based index'](http://exple.tive.org/blarg/2013/10/22/citation-needed/) kde se dozvime ze puvodne byla tato indexace zavedena nikoliv kvuli pointerove aritmetice, ale proto aby se lehce zkratil cas KOMPILACE! programu, protoze kdykoliv mohl zavolat reditel IBM z jachtoveho zavodu a vypnout vam probihajici program kvuli vypoctu handicapu.
 
 ***The social reason is that we had to save every cycle we could, because if the job didn’t finish fast it might not finish at all and you never know when you’re getting bumped off the hardware because the President of IBM just called and fuck your thesis, it’s yacht-racing time.***
 
