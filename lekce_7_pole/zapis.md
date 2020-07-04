@@ -6,7 +6,7 @@ Kazdemu je jasne ze typ 'tekutina' muzeme nalit do sklenice, ale typ 'dum' ne.
 
 Dalsim duvodem je ze 'nejde' udelat jeden typ na vsechno. Proto mame typ string kdyz chceme neco nekam napsat, nebo si treba ulozit neci jmeno. A typ number kdyz chceme neco spocitat, nebo si ulozit kolik co treba vazi.
 
-Vime tedy ze number a string jsou tzv. primitivni datove typy a dneska si probereme nektere slozitejsi/objektove datove typy: Array (pole) a Object (objekt). 
+Vime tedy ze number a string jsou tzv. primitivni datove typy a dneska si probereme nektere slozitejsi/objektove datove typy: Array (pole)
 
 
 Pozn.: obecne i v jinych jazycich ktere podporuji OOP se novy objekt vytvarit tak ze napiseme: 
