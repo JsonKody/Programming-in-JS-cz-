@@ -8,7 +8,7 @@ Nadefinujeme si prvni funkci. Mozna vite ze v Pyhtonu je pekna funkce print() al
 
 ```js
 function print() {
-    console.log("funguje to"!)
+    console.log("funguje to!")
 }
 ```
 
