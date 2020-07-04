@@ -81,7 +81,7 @@ Pokud vas zajima jaky mam ja nazor na indexaci od nuly tak po objeveni a vyzkous
 
 Btw zde je [zajimavy clanek, o 'zero based index'](http://exple.tive.org/blarg/2013/10/22/citation-needed/) kde se dozvime ze puvodne byla tato indexace zavedena nikoliv kvuli pointerove aritmetice, ale proto aby se lehce zkratil cas KOMPILACE! programu, protoze kdykoliv mohl zavolat reditel IBM z jachtoveho zavodu a vypnout vam probihajici program kvuli vypoctu handicapu.
 
-***"The social reason is that we had to save every cycle we could, because if the job didn’t finish fast it might not finish at all and you never know when you’re getting bumped off the hardware because the President of IBM just called and fuck your thesis, it’s yacht-racing time."`***
+***"The social reason is that we had to save every cycle we could, because if the job didn’t finish fast it might not finish at all and you never know when you’re getting bumped off the hardware because the President of IBM just called and fuck your thesis, it’s yacht-racing time."***
 
 ------------------
 
