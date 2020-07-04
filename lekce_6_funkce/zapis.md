@@ -1,6 +1,6 @@
 # Funkce
 
-Ve vetsine jazyku si muzete definovat vlastni funkce. Jedna se o velice mocny nastroj. Mimochodem mozna jste o tom zatim neslyseli, ale v programovani existuji tzv. programovaci paradigmata, tzn. jakym zpusobem se stavite k tomu samotnemu problemu, jakym zpusobem si ho pretvorite d okodu a vyresite. Jednim z techto paradigmat je i 'Funkcionalni paradigma' vedle dnes nejpopularnejsiho 'Objektove orientovaneho programovani' neboli OOP
+Ve vetsine jazyku si muzete definovat vlastni funkce. Jedna se o velice mocny nastroj. Mimochodem mozna jste o tom zatim neslyseli, ale v programovani existuji tzv. programovaci paradigmata, tzn. jakym zpusobem se stavite k tomu samotnemu problemu, jakym zpusobem si ho pretvorite do kodu a vyresite. Jednim z techto paradigmat je i 'Funkcionalni paradigma' vedle dnes nejpopularnejsiho 'Objektove orientovaneho programovani' neboli OOP
 
 Mimochodem pred chvili jsem mluvil o problemu. To proto ze programovani neni tolik o psani kodu. Programovani je o reseni problemu. O prehazovani dat a reseni problemu.
 
