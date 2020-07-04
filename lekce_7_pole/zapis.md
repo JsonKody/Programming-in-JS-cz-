@@ -18,7 +18,7 @@ new JmenoObjektu()
 Tak muzeme v JS vytvaret jak Array ... new Array(), nebo objekt ... new Object(). V JS ale muzeme pole a objekty taky zapsat 'rovnou'/'naprimo' jako literal.
 
 
-# Pole 
+# Pole ... again
 Pole je datovy typ ve kterem je spousta hodnot za sebou.
 
 ![zvykacky](https://www.e-cukrovinky.cz/fotky14690/fotos/_vyr_1545cukrovinky-gum-ball-16er-zvykacky-kulicky-haribo.jpg)
