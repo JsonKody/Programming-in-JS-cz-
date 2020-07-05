@@ -1,3 +1,5 @@
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=3RsELjLYOv0&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=2)
+
 # Promenne (variables):
 - var (zastarale)
 - let

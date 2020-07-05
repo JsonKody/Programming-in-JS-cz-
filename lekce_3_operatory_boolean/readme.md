@@ -1,3 +1,5 @@
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=jTubLlbMTIE&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=3)
+
 *Zkusime si jeste zapsat string se zpetnym lomitkem uvnitr*
 
 ```javascript

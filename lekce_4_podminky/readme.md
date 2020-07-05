@@ -1,3 +1,5 @@
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=s8_oCt9b0tI&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=4)
+
 ## Priklad z minuleho dilu
 ```javascript
 // promenna a = 3, b = 8

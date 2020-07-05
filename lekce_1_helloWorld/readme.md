@@ -1,1 +1,1 @@
-[Odkaz na video -> youtube](https://www.youtube.com/watch?v=JIDsxIrYfhk)
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=JIDsxIrYfhk&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=1)

@@ -1,3 +1,6 @@
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=s0UMo6bFTnI&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=6)
+
+
 # Funkce
 
 Ve vetsine jazyku si muzete definovat vlastni funkce. Jedna se o velice mocny nastroj. Mimochodem mozna jste o tom zatim neslyseli, ale v programovani existuji tzv. programovaci paradigmata, tzn. jakym zpusobem se stavite k tomu samotnemu problemu, jakym zpusobem si ho pretvorite do kodu a vyresite. Jednim z techto paradigmat je i 'Funkcionalni paradigma' vedle dnes nejpopularnejsiho 'Objektove orientovaneho programovani' neboli OOP

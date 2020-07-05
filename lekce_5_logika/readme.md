@@ -1,5 +1,6 @@
-# Logika
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=4i0cegyDvuk&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=5)
 
+# Logika
 
 ## ... ale jeste predtim ...
 
