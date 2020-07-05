@@ -1,5 +1,6 @@
 let auto = {
     znacka: "BMW",
+    kapacitaNadrze: 83,
     nadrz: 83,
     spotreba: .082,
     ujeto: 0,
@@ -24,6 +25,15 @@ let auto = {
             this.nadrz -= this.vypoctiSpotrebu(km)
             this.ujeto += km
             console.log(`Ujel jsi ${km} Km. V nadrzi zbyva ${ (this.nadrz).toFixed(2) } litru.`)
+        }
+    },
+
+    natankuj(litru) {
+        if(this.nadrz + litru > this.kapacitaNadrze) {
+            console.log("To je moc. Nataknovano na plnou.")
+            this.nadrz = this.kapacitaNadrze
+        } else {
+            this.nadrz += litru
         }
     },
     vypis() {
