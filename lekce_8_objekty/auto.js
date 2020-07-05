@@ -40,14 +40,10 @@ let auto = {
         console.log(`
     Vypis
     ----------------------------------
-    Nadrz:          ${ (this.nadrz).toFixed(2) } l
-    Celkem ujeto:   ${ (this.ujeto).toFixed(2) } Km
+    Nadrz:          ${ this.nadrz.toFixed(2) } l
+    Dojezd:         ${ this.dojezd().toFixed(2) } Km
+    Celkem ujeto:   ${ this.ujeto.toFixed(2) } Km
     Spotreba:       ${ (this.spotreba * 100).toFixed(2) } l/100 Km
                     `)
     }
 }
-
-auto.jed(400)
-auto.jed(400)
-auto.jed(400)
-auto.vypis()
