@@ -30,7 +30,7 @@ let auto = {
 
     natankuj(litru) {
         if(this.nadrz + litru > this.kapacitaNadrze) {
-            console.log("To je moc. Nataknovano na plnou.")
+            console.log(`To je moc. Natankovano na plnou (${ this.kapacitaNadrze } l).`)
             this.nadrz = this.kapacitaNadrze
         } else {
             this.nadrz += litru
