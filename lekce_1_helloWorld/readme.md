@@ -1,0 +1,1 @@
+[Odkaz na video -> youtube](https://www.youtube.com/watch?v=JIDsxIrYfhk)
