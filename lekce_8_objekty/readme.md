@@ -73,7 +73,7 @@ Zkusime pridat Mrakoplasovi nejakou metodu:
 ```js
 mrakoplas.mumlej = function() {
     console.log("„No nazdar, no nazdar.“")
-}
+}   
 
 // ukazeme si jak bysme takovou funkci mohli zapsat rovnou v literalu
 
@@ -131,4 +131,50 @@ let neclovek2 = {
 
 neclovek2.predstaveni()
 // -> Dobry den, jmenuji se Patejl.
+```
+
+
+# Druhy zpusob pristupu k vlastnostem objektu
+
+... je "bracket notation", cesky asi hranatozavorkova notace :)
+
+```js
+// pokud mame takovyto objekt:
+let pes = {
+    jmeno: "Penny",
+    vek: 5
+}
+
+// muzeme zjisti jmeno napsanim:
+pes.jmeno
+// -> Penny
+
+// ale mame jeste druhy zpusob zapisu
+pes["jmeno"]
+// -> Penny
+```
+Na prvni pohled je prvni zapis jednodussi a celkove lepsi. Je pravda ze po vetsinu casu budete pouzivat prvni zapis kvuli jeho jednoduchosti, ale neni pravda ze by byl lepsi. Vlastne je to tak ze druhy zpusob zapisu je mnohem mocnejsi.
+
+Vsimnete si ze ve druhem zapisu piseme do zavorek jen ***string*** ktery ma odpovidat ***klici*** objektu.
+
+A stringy muzeme ruzne menit a celkove 'programovat' zatimco prvni zapis je jasny. Programator si musi sednout a napsat napevno klic.
+
+
+
+# Auto
+
+Zkusime si na konec vytvorit auto, ktere bude jezdit a tankovat.
+
+```js
+
+let auto = {
+    znacka: "BMW",
+    nadrz: 100,
+    spotrebaNa100: 7,
+    jed(km) {
+        if(km / 100 * this.spotrebaNa100)
+    }
+}
+
+
 ```
