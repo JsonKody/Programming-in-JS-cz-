@@ -19,11 +19,11 @@ let auto = {
         if(km > dojezd) {
             this.nadrz = 0
             this.ujeto += dojezd
-            console.log(`Nadrz je prazdna, ujel jsi jen ${ dojezd }`)
+            console.log(`Nadrz je prazdna, ujel jsi jen ${ dojezd }.`)
         } else {
             this.nadrz -= this.vypoctiSpotrebu(km)
             this.ujeto += km
-            console.log(`Ujel jsi ${km} Km. V nadrzi zbyva ${ (this.nadrz).toFixed(2) }.`)
+            console.log(`Ujel jsi ${km} Km. V nadrzi zbyva ${ (this.nadrz).toFixed(2) } litru.`)
         }
     },
     vypis() {
