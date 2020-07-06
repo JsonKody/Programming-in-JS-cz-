@@ -1,4 +1,7 @@
-# Objekt
+[Odkaz na youtube video ->](https://www.youtube.com/watch?v=qk2Ao_dNP1k&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=8)
+
+
+# Objekty
 
 Namisto vysvetlovani literalu objektu zacnu rovnou kodem, protoze myslim, ze tak myslenku objektu pochopite snaze, nez kdybych o nich zdlouhave mluvil.
 
