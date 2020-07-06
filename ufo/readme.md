@@ -8,7 +8,7 @@ sipky:
 
 Mezernik:
 vypni tah motoru .. ufo se necha unaset ve smeru rychlosti jakou melo pred
-vypnutim motoru
+vypnutim motoru, protoze jsme ve vesmiru
 
 Enter:
 restart
