@@ -1,14 +1,14 @@
 [Odkaz na UFO ->](http://ufo.surge.sh)
 
-Ovladani:
+# Ovladani:
 
-sipky:
-<- pridej tah doleva
+## sipky:
+<- pridej tah doleva <br>
 -> pridej tah doprava .. to same nahoru/dolu
 
-Mezernik:
+## Mezernik:
 vypni tah motoru .. ufo se necha unaset ve smeru rychlosti jakou melo pred
 vypnutim motoru, protoze jsme ve vesmiru
 
-Enter:
+## Enter:
 restart
