@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.F.O.</title>
+
+    <style>
+        html, body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        }
+
+        canvas {
+            background: #000e24;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+
+    <script>
+        class Ufo {
+  
+  constructor(x, y) {
+    this.ufo = new Circle(x, y, 15)
+		this.rychlostX = 0
+		this.rychlostY = 0
+		this.tahX = 0
+		this.tahY = 0
+  }
+	
+	zmenTahX(cislo) {
+		this.tahX += cislo
+	}
+	
+	zmenTahY(cislo) {
+		this.tahY += cislo
+	}
+	
+	break() {
+		this.tahY = 0
+		this.tahX = 0
+	}
+	
+	draw() {
+		this.rychlostX += this.tahX
+		this.rychlostY += this.tahY
+		this.ufo.moveX(this.rychlostX)
+		this.ufo.moveY(this.rychlostY)
+		this.ufo.draw()
+	}
+}
+
+
+class Circle {
+  
+  constructor(x, y, r) {
+    this.x = x
+    this.y = y
+    this.r = r
+		this.color = "#7d7d7d"
+    this.draw()
+  }
+	
+	moveX(number) {
+		this.x += number
+	}
+  
+	moveY(number) {
+		this.y += number
+	}
+  
+  draw() {
+    c.beginPath()
+    c.arc(this.x, this.y, this.r, 0, Math.PI * 2, false)
+		c.strokeStyle = this.color
+		c.fillStyle = this.color
+    c.stroke()
+		c.fill()
+  }
+	
+}
+
+
+class Map {
+	
+	constructor(width, height) {
+		this.docks = [
+			new Dock( 140 , height - 200),
+			new Dock(width/2 - 30 , height - 200),
+			new Dock(width - 200 , height - 200),
+		]
+	}
+	
+	drawRamp() {
+		c.beginPath()
+		c.moveTo(0, 0);
+		c.lineTo(250, 0);
+		c.lineTo(0, 250);
+		c.lineTo(0, 0);
+		c.closePath();
+		c.fillStyle = "#222";
+		c.fill();
+	}
+	
+	drawMap() {
+		this.drawRamp()
+		this.docks.forEach(dock => {
+			dock.draw()
+		})
+	}
+}
+
+class Dock {
+	
+	constructor(x, y) {
+		this.x = x
+		this.y = y
+		this.width = 60
+		this.isFull = false
+	}
+	
+	checkUFO() {
+		if(!this.isFull){
+			if(player.ufo.x >= this.x && player.ufo.x <= this.x + this.width){
+				if(player.ufo.y >= this.y && player.ufo.y <= this.y + this.width){
+					 console.log("its inside")
+
+					if(Math.abs(player.rychlostX) + Math.abs(player.rychlostY) < 0.06) {
+						console.log("WIN")
+						this.isFull = true
+
+						player = new Ufo( 80, 80)
+					}
+				}
+			}
+		}
+	}
+	
+	draw() {
+		this.checkUFO()
+		c.beginPath()
+		c.rect(this.x, this.y, this.width, this.width)
+		if(this.isFull) {
+			c.fillStyle = "#7d7d7d";
+		} else {
+			c.fillStyle = "#252525";
+		}
+		c.fill();
+	}
+	
+	
+}
+
+
+const canvas = document.querySelector('canvas')
+const crop = 50
+const mapWidth = window.innerWidth - crop
+const mapHeight = window.innerHeight - crop
+canvas.width = mapWidth
+canvas.height = mapHeight
+
+const c = canvas.getContext('2d')
+
+let player = new Ufo( 80, 80)
+const map = new Map(mapWidth, mapHeight)
+
+
+function animate() {
+  requestAnimationFrame(animate)
+
+  c.clearRect(0, 0, innerWidth - crop, innerHeight - crop)
+	map.drawMap()
+	player.draw()
+}
+animate()
+
+
+document.addEventListener("keydown", e => {
+	
+	const SPEED = .001
+	
+	switch(e.keyCode) {
+			// left	
+			case 37: player.zmenTahX(-SPEED)
+				break;
+			// right
+			case 39: player.zmenTahX(SPEED)
+				break;
+			// up
+			case 38: player.zmenTahY(-SPEED)
+				break;
+			// down
+			case 40: player.zmenTahY(SPEED)
+				break;
+			// break
+			case 32: player.break()
+				break;
+			case 13: player = new Ufo(80, 80)
+	}
+})
+    </script>
+</body>
+</html>
