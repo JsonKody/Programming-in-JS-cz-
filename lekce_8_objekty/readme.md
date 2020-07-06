@@ -1,6 +1,6 @@
 # Objekt
 
-U vystvetlovani objektu zacnu rovnou kodem protoze myslim, ze tak myslenku objektu pochopite snaze nez kdybych o nich zdlouhave mluvil.
+Namisto vysvetlovani literalu objektu zacnu rovnou kodem, protoze myslim, ze tak myslenku objektu pochopite snaze, nez kdybych o nich zdlouhave mluvil.
 
 ```js
 // literal objektu ze zapisuje takto
@@ -18,7 +18,7 @@ U vystvetlovani objektu zacnu rovnou kodem protoze myslim, ze tak myslenku objek
 // tento objekt uz neni, prazdny. Ma jeden klic a ten ma hodnotu
 ```
 
-***Objekt*** muzeme ulozit treba do nejake promenne a pak s nim dale pracovat, napr. ptat se ho na hodnoty klicu nebo mu treba nejake nove vlastnosti **\<klic, hodnota\>** pridat.
+***Objekt*** muzeme ulozit treba do nejake promenne a pak s nim dale pracovat, napr. ptat se ho na hodnoty klicu, nebo mu treba nejake nove vlastnosti **\<klic, hodnota\>** pridat.
 
 ```js
 let mrakoplas = {
@@ -172,9 +172,8 @@ let auto = {
     nadrz: 100,
     spotrebaNa100: 7,
     jed(km) {
-        if(km / 100 * this.spotrebaNa100)
+        this.nadrz = this.nadrz - 5
+        console.log(`Ujel jsi ${ km }, v nadrzi zbyva ${ this. nadrz } litru.`)
     }
 }
-
-
 ```
