@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadej cislo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Uhodni cislo</h1>
+        
+        
+        <input id="input" type="text">
+        <button id="button">hadej</button>
+        <p  id="odpoved"></p>
+        <p  id="zprava"></p>
+        
+    </div>
+        
+        
+    <script>
+        const input = document.getElementById("input")
+        const button = document.getElementById("button")
+        const odpoved = document.getElementById("odpoved")
+        const zprava = document.getElementById("zprava")
+
+        let nahodneCislo = vygenerujNahodneCislo()
+
+
+        // funkce: generuje nahodneCislo 1-100
+        function vygenerujNahodneCislo() {
+            return Math.floor(Math.random() * 100 + 1)
+        }
+
+        // hlida zmacknuti buttonu
+        button.addEventListener('click', function(e) {
+            porovnejCisla()
+        })
+
+        // hlida zmacknuti Enteru
+        addEventListener('keyup', function(e) {
+            if(e.keyCode === 13) {
+                porovnejCisla()
+            }
+        })
+
+
+        function porovnejCisla() {
+            console.log(`
+    input: ${input.value}
+    nahodneCislo: ${nahodneCislo}`)
+            
+            if(input.value == nahodneCislo) {
+                // alert("spraaavne")
+                zprava.textContent = "spraaavne"
+                zprava.style.color = "green"
+                nahodneCislo = vygenerujNahodneCislo()
+            } else {
+                zprava.textContent = "spatne .. zkus to znovu"
+                zprava.style.color = "red"
+                // alert("spatne .. zkus to znovu")
+            }
+    
+        }
+        
+
+    </script>
+</body>
+</html>
