@@ -22,6 +22,8 @@ Hra by např. mohla/měla:
 
 
 # Surge.sh
+<span style="font-size: 1.3rem">⚠</span> Abyste mohli používat <span style="font-size: 1.3rem; color: green">npm</span> musíte mít nainstalovaný [node.js](https://nodejs.org/en/) <span style="font-size: 1.3rem">⚠</span>
+
 [Surge.sh](http://surge.sh) nainstalujete tak, že do terminálu napíšete: 
 
 ```bash
