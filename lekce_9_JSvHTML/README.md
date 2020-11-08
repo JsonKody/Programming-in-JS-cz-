@@ -25,10 +25,10 @@ Hra by např. mohla/měla:
 [Surge.sh](http://surge.sh) nainstalujete tak, že do terminálu napíšete: 
 
 ```bash
-# kratka verze
+# krátká verze
 npm i -g surge
 
-# nebo delsi verze - je to uplne to same
+# nebo delší verze - je to úplně to samé
 npm install --global surge
 ```
 
