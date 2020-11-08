@@ -21,7 +21,7 @@ Hra by např. mohla/měla:
  7. atd. vymyslete si sami nejakou funkci a zkuste ji implementovat (přidat)
 
 
-## PS: Emoji je taky jenom string .. klidně se dají používat v kódu JS 😈😱😲😲🤓😎 ... co třeba jako šipku nahoru-dolu atd.? ✅✔❌🔼⏬⤴⬆🔺🔻[Kouknete se sami](https://unicode.org/emoji/charts/full-emoji-list.html)
+## PS: Emoji je taky jenom string. Klidně se dají používat v kódu JS 😈😱😲😲🤓😎 ... co třeba jako šipku nahoru-dolu atd.? ✅✔❌🔼⏬⤴⬆🔺🔻[koukněte se sami ...](https://unicode.org/emoji/charts/full-emoji-list.html)
 
 <br>
 <br>
