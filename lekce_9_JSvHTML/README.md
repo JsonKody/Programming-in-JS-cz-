@@ -1,5 +1,5 @@
 # JS v HTML (& CSS)
-
+[Odkaz na hru na Surge.sh](https://lekce9.surge.sh/)
 ![náhledový obrázek](../asssets/images/9.png)
 
 
