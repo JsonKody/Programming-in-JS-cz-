@@ -21,6 +21,14 @@ Hra by např. mohla/měla:
  7. atd. vymyslete si sami nejakou funkci a zkuste ji implementovat (přidat)
 
 
+## PS: Emoji je taky jenom string .. klidně se dají používat v kódu JS 😈😱😲😲🤓😎 ... co třeba jako šipku nahoru-dolu atd.? ✅✔❌🔼⏬⤴⬆🔺🔻[Kouknete se sami](https://unicode.org/emoji/charts/full-emoji-list.html)
+
+<br>
+<br>
+
+----
+
+
 # Surge.sh
 <span style="font-size: 1.3rem">⚠</span> Abyste mohli používat <span style="font-size: 1.3rem; color: green">***npm***</span> musíte mít nainstalovaný [node.js](https://nodejs.org/en/) <span style="font-size: 1.3rem">⚠</span>
 
