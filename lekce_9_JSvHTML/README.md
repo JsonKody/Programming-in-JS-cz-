@@ -6,4 +6,4 @@
 V teto lekci si v rychlosti ukazeme jak zapsat JS do nasi webove stranky a vytvorime si jednouduchou hru -> 'Uhodni cislo'
 
 
-⚡🦧🦩🚀🤯
+# 💪🤓🦧🦉🦩🐊🛰🚀🛸⭐⚡🏆🎖🎓💎⚔🤯
