@@ -24,9 +24,7 @@ Hra by např. mohla/měla:
 ## PS: Emoji je taky jenom string. Klidně se dají používat v kódu JS 😈😱😲😲🤓😎 ... co třeba jako šipku nahoru-dolu atd.? ✅✔❌🔼⏬⤴⬆🔺🔻[koukněte se sami ...](https://unicode.org/emoji/charts/full-emoji-list.html)
 
 <br>
-<br>
 
-----
 
 
 # Surge.sh
