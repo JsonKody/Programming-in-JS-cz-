@@ -22,7 +22,7 @@ Hra by např. mohla/měla:
 
 
 # Surge.sh
-<span style="font-size: 1.3rem">⚠</span> Abyste mohli používat <span style="font-size: 1.3rem; color: green">npm</span> musíte mít nainstalovaný [node.js](https://nodejs.org/en/) <span style="font-size: 1.3rem">⚠</span>
+<span style="font-size: 1.3rem">⚠</span> Abyste mohli používat <span style="font-size: 1.3rem; color: green">***npm***</span> musíte mít nainstalovaný [node.js](https://nodejs.org/en/) <span style="font-size: 1.3rem">⚠</span>
 
 [Surge.sh](http://surge.sh) nainstalujete tak, že do terminálu napíšete: 
 
@@ -47,9 +47,9 @@ Poté vygeneruje doménu napr.:
  domain: beautiful-smash.surge.sh
 ```
 
-<span style="color: yellow">beautiful-smash</span>.surge.sh
+<span style="color: yellow">***beautiful-smash***</span>.surge.sh
 
-Tu žlutou část můžete upravit jak je libo, jen už to nesmí být zabrané a samozřejmě můžete použít pouze znaky které jsou povolené v URL (internetová adresa).
+Tu zvýrazněnou část před '.surge.sh' můžete upravit jak je libo, jen už to nesmí být zabrané a samozřejmě můžete použít pouze znaky které jsou povolené v URL (internetová adresa).
 
 # ⚠ POZOR! ⚠
 Jméno hlavní stránky MUSÍ být 'index.html', jinak surge nebude vědět, který soubor načíst a bude vám hlásit ze stránka neexistuje ;)
