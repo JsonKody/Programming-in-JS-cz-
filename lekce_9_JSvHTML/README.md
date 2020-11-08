@@ -49,5 +49,5 @@ Poté vygeneruje doménu napr.:
 
 Tu žlutou část můžete upravit jak je libo, jen už to nesmí být zabrané a samozřejmě můžete použít pouze znaky které jsou povolené v URL (internetová adresa).
 
-# <span style="color: red">⚠</span> POZOR! <span style="color: red">⚠</span>
+# ⚠ POZOR! ⚠
 Jméno hlavní stránky MUSÍ být 'index.html', jinak surge nebude vědět, který soubor načíst a bude vám hlásit ze stránka neexistuje ;)
