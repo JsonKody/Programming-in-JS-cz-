@@ -3,7 +3,12 @@
 ![náhledový obrázek](../asssets/images/9.png)
 
 
-V této lekci si v rychlosti ukážeme jak zapsat JS do naší webové stránky a vytvoříme si jednouduchou hru -> 'Uhodni číslo'
+<br>
+
+## V této lekci si v rychlosti ukážeme jak zapsat JS do naší webové stránky a vytvoříme si jednouduchou hru -> 'Uhodni číslo'
+
+<br>
+<br>
 
 
 # 💪🤓😎🦧🦉🦩🐊🛰🚀🛸⭐⚡🏆🎖🎓💎⚔🤯
