@@ -9,7 +9,7 @@ const promenna2 = 2
 var promenna3 = 3
 ```
 
-Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): **let**, **const** a **var**.
+Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): ```let, const a var```
 
 ## var
 
