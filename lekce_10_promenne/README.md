@@ -81,7 +81,7 @@ Pozn.: přestože
 
 ```js
 typeof function () {}
-// vypise: 'function'
+// vypíše: 'function'
 ```
 
 je funkce brána jako datový typ 'object'. Můžeme to brát tak, že je to speciální typ objektu .. podmnožina objektu.
@@ -119,6 +119,7 @@ Až později ji můžeme využít k podržení např. čísla osm (inicializace)
 ```js
 cislo = 8
 ```
+Pozn.: ```=``` toto není "rovná se", je to "operátor přiřazení". V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
 
 ## Definice (definice -> deklarace a zároveň inicializace)
 
