@@ -77,7 +77,7 @@ Je osm datových typů:
 1. **bigint** pro obrovská celá čísla (nebudeme používat)
 1. **symbol** pro unikátní identifikátory (nebudeme používat)
 
-Pozn.: přestože
+**Pozn.:** přestože
 
 ```js
 typeof function () {}
@@ -119,7 +119,7 @@ Až později ji můžeme využít k podržení např. čísla osm (inicializace)
 ```js
 cislo = 8
 ```
-Pozn.:\
+**Pozn.:**\
 ```=``` toto není "rovná se", je to "operátor přiřazení".\
 V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
 
