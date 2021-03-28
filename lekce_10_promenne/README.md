@@ -214,14 +214,11 @@ Definice funkcí a deklarace proměnných pomoví slovíčka **var** jsou tzv. h
 Takže se z:
 ```js
 
-// zavolání/spuštění funkce
-mojeFunkce()
+mojeFunkce() // zavolání/spuštění funkce
 
-//inicializace proměnné
-num = 5
+num = 5 //inicializace proměnné
 
-// deklarace proměnné
-var num
+var num // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
@@ -232,8 +229,7 @@ stane:
 ```js
 // --- toto bylo vyzdvizeno ---
 
-// deklarace proměnné
-var num
+var num // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
@@ -241,11 +237,10 @@ function mojeFunkce() {
 }
 // ----------------------------
 
-// zavolání/spuštění funkce
-mojeFunkce()
 
-//inicializace proměnné
-num = 5
+mojeFunkce() // zavolání/spuštění funkce
+
+num = 5 //inicializace proměnné
 
 ```
 ## Pozor na
