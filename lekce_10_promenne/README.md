@@ -101,9 +101,7 @@ Proměnná je vytvořena, a rovnou jsme jí předali číslo **5**.
 Je možné definovat si několik proměnných za sebou pouze oddělených čárkami.
 
 ```js
-let clovek = "Pepa",
-  vek = 25,
-  zprava = "ahoj lidi";
+let clovek = "Pepa", vek = 25, zprava = "ahoj lidi";
 ```
 
 toto je shodné s tímto:
