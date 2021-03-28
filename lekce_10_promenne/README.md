@@ -84,7 +84,7 @@ typeof function () {}
 // vypíše: 'function'
 ```
 
-je funkce brána jako datový typ 'object'. Můžeme to brát tak, že je to speciální typ objektu .. podmnožina objektu.
+je funkce brána jako datový typ ***object***. Můžeme to brát tak, že je to speciální typ objektu .. podmnožina objektu.
 
 ## Obrázek může být lepší než tisíc slov
 
