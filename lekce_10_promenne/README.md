@@ -40,6 +40,25 @@ let 1cislo = "NEFUNGUJE .. jmeno promenne nesmi zacinat cislem"
 let cislo* = "NEFUNGUJE .. nepovoleny znak ve jmene promenne"
 ```
 
+### Pozor na:
+
+Není možné pojmenovat jako nějaký 'keyword' z jazyka JS.
+
+```js
+// např.:
+let var = "ahoj"
+const for = "svete"
+var while = "JS"
+// atd.
+```
+
+A samozřejmě, není možné vytvořit proměnnou se jménem, která již používá jiná proměnná (ve stejném **scopu**):
+
+```js
+let zprava = "ahoj"
+let zprava = "svete"
+```
+
 Proměnné jsou tzv. dynamicky typované - mohou obsahovat jakýkoliv typ:
 
 ```js
@@ -257,24 +276,7 @@ mojeFunkce() // zavolání/spuštění funkce
 num = 5 //inicializace proměnné
 ```
 
-## Pozor na
 
-Není možné deklarovat proměnnou pojmenovanou jako nějaký 'keyword' z jazyka JS.
-
-```js
-// např.:
-let var = "ahoj"
-const for = "svete"
-var while = "JS"
-// atd.
-```
-
-Podobně, není možné deklarovat/definovat jméno proměnné která již existuje:
-
-```js
-let zprava = "ahoj"
-let zprava = "svete"
-```
 
 # Materiály:
 
