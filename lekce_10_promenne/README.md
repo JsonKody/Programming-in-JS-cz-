@@ -119,7 +119,7 @@ Až později ji můžeme využít k podržení např. čísla osm (inicializace)
 ```js
 cislo = 8
 ```
-Pozn.: ```=``` toto není "rovná se", je to "operátor přiřazení". V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
+Pozn.: ```=``` toto není "rovná se", je to "operátor přiřazení".<br> V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
 
 ## Definice (definice -> deklarace a zároveň inicializace)
 
