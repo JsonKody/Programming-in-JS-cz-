@@ -123,7 +123,7 @@ cislo = 8
 ```=``` toto není "rovná se", je to "operátor přiřazení".\
 V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
 
-## Definice (definice -> deklarace a zároveň inicializace)
+## Definition (definice -> deklarace a zároveň inicializace)
 
 ```js
 let cislo = 5
