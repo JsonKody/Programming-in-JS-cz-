@@ -74,6 +74,8 @@ message = "World!";
 
 **_Měli byste si přiřazení proměnné představovat spíše jako chapadla než krabice. Proměnná 'neobsahuje' hodnotu. 'Ukazuje' na ni - drží ji. Program může přistupovat jenom k těm hodnotám na které má odkaz (reference) .. ukazuje na ně nějaká proměnná. Pokud si potřebujete něco zapamatovat, vytvoříte 'chapadlo', které to chytne nebo tu věc dáte držet nějakému již vytvořenému chapadlu._**
 
+# A teď trocha programátorského názvosloví a hnidopišství
+
 ## Declaration (deklarace)
 
 ```js
@@ -82,19 +84,20 @@ let cislo;
 
 Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah bude teda defaultně **undefined**.
 
-Až později ji můžeme využít k podržení např. čísla osm:
+##  Initializing (inicializace)
+Až později ji můžeme využít k podržení např. čísla osm (inicializace):
 
 ```js
 cislo = 8;
 ```
 
-## Definition (definice)
+##  Definice (definice -> deklarace a zároveň inicializace)
 
 ```js
 let cislo = 5;
 ```
 
-Proměnná je vytvořena, a rovnou jsme jí předali číslo **5**.
+Proměnná je vytvořena (deklarace), a rovnou jsme jí předali číslo **5** (inicializace).
 
 ## Alternativní zápisy
 
@@ -128,26 +131,26 @@ let clovek = "Pepa"
 
 ## Co znamená, že const lze definovat pouze jednou?
 
-Obyčejné proměnné definované pomocí var nebo let jde měnit. Jednou do nich dáme třeba číslo pět, to potom nahradíme číslem osm atd. Const ale vychází ze jména konstanta a byl zaveden právě pro případy kdy předem víme, že nechceme nekdy měnít co co do něj jednou přiřadíme. Je dobrým zvykem napříč programovacími jazyky psát jméno konstanty velkými písmeny. Tak je potom všem jasné, že pracují s konstanou.
+Obyčejné proměnné definované pomocí var nebo let jde měnit. Jednou do nich dáme třeba číslo pět, to potom nahradíme číslem osm atd. Const ale vychází ze jména konstanta a byl zaveden právě pro případy, kdy předem víme, že nechceme nikdy měnit to co do něj jednou přiřadíme. Je dobrým zvykem napříč programovacími jazyky psát jméno konstanty velkými písmeny. Tak je potom všem jasné, že pracují s konstanou.
 
-Př:.
+Např:.
 
 ```js
 const PI = 3.14159265359;
 
 // ...
-// nekde uplne jinde v kodu ...
+// někde úplně jinde v kódu ...
 
 function vypocet(cislo) {
   return cislo * PI;
 }
-// kazdemu je jasne uz ze zapisu velkymi pismeny ze PI je nejaka konstanta
+// každému je jasné už ze zápisu velkými písmeny že PI je nějaká konstanta
 ```
 
-A teď si ukážeme rozdíl mezi primitivními a Objektovými datovými typy a co to pro nás znamená v souvislosti s const:
+A teď si ukážeme rozdíl mezi primitivními a Objektovými datovými typy a co to pro nás znamená v souvislosti s **const**:
 
 ```js
-// definice opravdove konstanty s primitivním datovým typem
+// definice opravdové konstanty s primitivním datovým typem
 const PI = 3.14159265359;
 //...
 PI = 3.15;
@@ -162,7 +165,7 @@ console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
 
 ![objekt vs primitiv](./tent1.png)
 
-## Dva problemy s var a jak je resi let/const
+## Problémy s **var** a jak je řeší **let/const**
 
 ***block scope*** vs ***function scope***
 
@@ -171,7 +174,7 @@ function nejakaFunkce() {
   var jedna = 1;
   let bedna = "bedna";
 
-  if (jedna === 1) {
+  if (true) {
     var deset = 10;
     let peset = "pesos";
   }
@@ -183,12 +186,74 @@ function nejakaFunkce() {
 }
 ```
 
+Redeklarace: 
+```js
+  let cislo = 5
+  let cislo = 8
+  // -> Chyba! Proměnná číslo už existuje
+
+  var num = 4
+  var num = 8
+  // -> Vše OK ... to ale my nechceme! Chceme vědět, že jsme někde přepsali proměnnou
+```
+
+U var můžeme inicializovat proměnnou nad její deklarací
+```js
+  cislo = 5
+  var cislo
+  // funguje (kvůli něčemu čemu říkáme hoisting - vyzdvižení)
+
+  num = 5
+  let num
+  // opraveno .. žádný hoisting .. toto nefunguje! 
+```
+
+## Hoisting (vyzdvižení)
+Definice funkcí a deklarace proměnných pomoví slovíčka **var** jsou tzv. hoisted - vyzdviženy. Můžete si to představit tak, že ještě než JS kód spustí, si ho celý projde a všechny deklarace pomocí **var** a všechny definice funkce přesune na vrch kódu.
+
+Takže se z:
+```js
+
+// zavolání/spuštění funkce
+mojeFunkce()
+
+//inicializace proměnné
+num = 5
+
+// deklarace proměnné
+var num
+
+//definice funkce
+function mojeFunkce() {
+  return 'neco'
+}
+```
+stane: 
+```js
+// --- toto bylo vyzdvizeno ---
+
+// deklarace proměnné
+var num
+
+//definice funkce
+function mojeFunkce() {
+  return 'neco'
+}
+// ----------------------------
+
+// zavolání/spuštění funkce
+mojeFunkce()
+
+//inicializace proměnné
+num = 5
+
+```
 ## Pozor na
 
 Není možné deklarovat proměnnou pojmenovanou jako nějaký 'keyword' z jazyka JS.
 
 ```js
-// napr.:
+// např.:
 let var = "ahoj";
 const for = "svete";
 var while = "JS";
@@ -201,6 +266,11 @@ Podobně, není možné deklarovat/definovat jméno proměnné která již exist
 let zprava = "ahoj";
 let zprava = "svete";
 ```
+
+
+
+
+
 
 # Materiály:
 
