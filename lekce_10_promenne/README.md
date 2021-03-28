@@ -121,9 +121,9 @@ let clovek = "Pepa",
 
 // nebo i s čárkami vepředu
 
-let clovek = "Pepa",
-  vek = 25,
-  zprava = "ahoj lidi";
+let clovek = "Pepa"
+  , vek = 25
+  , zprava = "ahoj lidi";
 ```
 
 ## Co znamená, že const lze definovat pouze jednou?
