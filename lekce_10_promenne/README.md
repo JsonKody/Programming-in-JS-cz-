@@ -13,16 +13,16 @@ Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**
 
 ## var
 
-Je nejstarší způsob a protože měl určité 'mouchy', byly do nového JS přidány **let** a **const** aby **var** nahradily. Var proto nebudeme používat.
+Je nejstarší způsob a protože měl určité 'mouchy', byly do nového JS přidány **let** a **const**, aby **var** nahradily. Var proto nebudeme používat.
 
 ## let
 
-Nový způsob definice proměnné. Budeme ho používat namísto var.
+Nový způsob definice proměnné. Budeme ho používat namísto **var**.
 
 ## const
 
-(jako konstant - konstanta)<br>
-Ve všem až na jeden malý detail je **const** shodné s **let**. Narozdíl od **let** ale jednou naplněné **const** už nelze naplnit nečím jiným.
+Jako konstant -> konstanta.<br>
+Ve všem, až na jeden malý detail je **const** shodné s **let**. Narozdíl od **let**, ale jednou naplněné **const** už nelze naplnit jinou hodnotou.
 
 ## Opakování je matka ...
 
@@ -42,7 +42,7 @@ let cislo* = "NEFUNGUJE .. nepovoleny znak ve jmene promenne"
 
 ### Pozor na:
 
-Není možné pojmenovat jako nějaký 'keyword' z jazyka JS.
+Není možné jako jméno proměnné použít 'keyword' z jazyka JS.
 
 ```js
 // např.:
