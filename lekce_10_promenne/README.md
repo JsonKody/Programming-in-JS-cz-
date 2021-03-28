@@ -72,8 +72,8 @@ Je osm datových typů:
 1. **string** pro řetězce - prostě posloupnost znaků jako např. "ahoj",
 1. **boolean** pro logické hodnoty - true/false (pravda/lež),
 1. **object** – pro komplexní datové struktury
-1. **undefined** – typ s jedinou hodnotou 'undefined', což znamená 'prázdný - zatím jsi sem nic nedal'
-1. **null** – typ s jedinou hodnotou 'null', což znamená něco jako 'prázdný' nebo 'nic tu není'
+1. **undefined** – typ s jedinou hodnotou *undefined*, což znamená *prázdný - zatím jsi sem nic nedal*
+1. **null** – typ s jedinou hodnotou *null*, což znamená něco jako *prázdný* nebo *nic tu není*
 1. **bigint** pro obrovská celá čísla (nebudeme používat)
 1. **symbol** pro unikátní identifikátory (nebudeme používat)
 
