@@ -68,7 +68,7 @@ let message = "Hello";
 message = "World!";
 ```
 
-![let box](./let1.png)
+![let box](./let1.png)<br>
 ![let box change](./let2.png)
 ![tentacle(t)](./let3.png)
 
@@ -157,15 +157,33 @@ PI = 3.15;
 
 const clovek = { jmeno: "Karel", vek: 21 };
 
-clovek.jmeno = "Melichar"
+clovek.jmeno = "Melichar";
 
-console.log(clovek) // -> {jmeno: "Melichar", vek: 21}
+console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
 ```
 
 ![objekt vs primitiv](./tent1.png)
 
+## Dva problemy s var a jak je resi let/const
 
+***block scope*** vs ***function scope***
 
+```js
+function nejakaFunkce() {
+  var jedna = 1;
+  let bedna = "bedna";
+
+  if (jedna === 1) {
+    var deset = 10;
+    let peset = "pesos";
+  }
+
+  console.log(jedna); // -> 1
+  console.log(bedna); // -> 'bedna'
+  console.log(deset); // -> 10
+  console.log(peset); // -> Chyba! peset neni definovano!
+}
+```
 
 ## Pozor na
 
