@@ -25,6 +25,7 @@ Jako konstant -> konstanta.\
 Ve všem, až na jeden malý detail je **const** shodné s **let**. Narozdíl od **let**, ale jednou naplněné **const** už nelze naplnit jinou hodnotou.
 
 ## Opakování je matka ...
+![matka](./mother.png)
 
 Jméno proměnné je složeno z písmen a čísel, ALE nesmí začínat číslem.
 Také může obsahovat znaky **$** a **\_**.
