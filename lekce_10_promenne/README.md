@@ -21,7 +21,7 @@ Nový způsob definice proměnné. Budeme ho používat namísto **var**.
 
 ## const
 
-Jako konstant -> konstanta.<br>
+Jako konstant -> konstanta.  
 Ve všem, až na jeden malý detail je **const** shodné s **let**. Narozdíl od **let**, ale jednou naplněné **const** už nelze naplnit jinou hodnotou.
 
 ## Opakování je matka ...
@@ -96,8 +96,8 @@ let message = "Hello"
 message = "World!"
 ```
 
-![let box](./let1.png)<br>
-![let box change](./let2.png)<br>
+![let box](./let1.png)  
+![let box change](./let2.png)  
 ![tentacle(t)](./let3.png)
 
 **_Měli byste si přiřazení proměnné představovat spíše jako chapadla než krabice. Proměnná 'neobsahuje' hodnotu. 'Ukazuje' na ni - drží ji. Program může přistupovat jenom k těm hodnotám na které má odkaz (reference) .. ukazuje na ně nějaká proměnná. Pokud si potřebujete něco zapamatovat, vytvoříte 'chapadlo', které to chytne nebo tu věc dáte držet nějakému již vytvořenému chapadlu._**
@@ -119,7 +119,9 @@ Až později ji můžeme využít k podržení např. čísla osm (inicializace)
 ```js
 cislo = 8
 ```
-Pozn.: ```=``` toto není "rovná se", je to "operátor přiřazení".<br> V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
+Pozn.:  
+```=``` toto není "rovná se", je to "operátor přiřazení".  
+V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
 
 ## Definice (definice -> deklarace a zároveň inicializace)
 
