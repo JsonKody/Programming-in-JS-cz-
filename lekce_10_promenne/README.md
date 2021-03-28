@@ -2,11 +2,11 @@
 
 ```js
 // nový zápis
-let promenna1 = 1;
-const promenna2 = 2;
+let promenna1 = 1
+const promenna2 = 2
 
 // zastaralý zápis
-var promenna3 = 3;
+var promenna3 = 3
 ```
 
 Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): **let**, **const** a **var**.
@@ -43,8 +43,8 @@ let cislo* = "NEFUNGUJE .. nepovoleny znak ve jmene promenne"
 Proměnné jsou tzv. dynamicky typované - mohou obsahovat jakýkoliv typ:
 
 ```js
-let x = 5;
-x = "Jablko";
+let x = 5
+x = "Jablko"
 ```
 
 Je osm datových typů:
@@ -61,7 +61,7 @@ Je osm datových typů:
 Pozn.: přestože
 
 ```js
-typeof function () {};
+typeof function () {}
 // vypise: 'function'
 ```
 
@@ -70,11 +70,11 @@ je funkce brána jako datový typ 'object'. Můžeme to brát tak, že je to spe
 ## Obrázek může být lepší než tisíc slov
 
 ```js
-let message = "Hello";
+let message = "Hello"
 
 //...
 
-message = "World!";
+message = "World!"
 ```
 
 ![let box](./let1.png)<br>
@@ -88,7 +88,7 @@ message = "World!";
 ## Declaration (deklarace)
 
 ```js
-let cislo;
+let cislo
 ```
 
 Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah bude teda defaultně **undefined**.
@@ -98,13 +98,13 @@ Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah
 Až později ji můžeme využít k podržení např. čísla osm (inicializace):
 
 ```js
-cislo = 8;
+cislo = 8
 ```
 
 ## Definice (definice -> deklarace a zároveň inicializace)
 
 ```js
-let cislo = 5;
+let cislo = 5
 ```
 
 Proměnná je vytvořena (deklarace), a rovnou jsme jí předali číslo **5** (inicializace).
@@ -114,15 +114,15 @@ Proměnná je vytvořena (deklarace), a rovnou jsme jí předali číslo **5** (
 Je možné definovat si několik proměnných za sebou pouze oddělených čárkami.
 
 ```js
-let clovek = "Pepa", vek = 25, zprava = "ahoj lidi";
+let clovek = "Pepa", vek = 25, zprava = "ahoj lidi"
 ```
 
 toto je shodné s tímto:
 
 ```js
-let clovek = "Pepa";
-let vek = 25;
-let zprava = "ahoj lidi";
+let clovek = "Pepa"
+let vek = 25
+let zprava = "ahoj lidi"
 ```
 
 První způsob zápisu oddělený čárkami můžeme 'roztáhnout' přes několik řádků:
@@ -130,13 +130,13 @@ První způsob zápisu oddělený čárkami můžeme 'roztáhnout' přes několi
 ```js
 let clovek = "Pepa",
     vek = 25,
-    zprava = "ahoj lidi";
+    zprava = "ahoj lidi"
 
 // nebo i s čárkami vepředu
 
 let clovek = "Pepa"
   , vek = 25
-  , zprava = "ahoj lidi";
+  , zprava = "ahoj lidi"
 ```
 
 ## Co znamená, že const lze definovat pouze jednou?
@@ -146,13 +146,13 @@ Obyčejné proměnné definované pomocí var nebo let jde měnit. Jednou do nic
 Např:.
 
 ```js
-const PI = 3.14159265359;
+const PI = 3.14159265359
 
 // ...
 // někde úplně jinde v kódu ...
 
 function vypocet(cislo) {
-  return cislo * PI;
+  return cislo * PI
 }
 // každému je jasné už ze zápisu velkými písmeny že PI je nějaká konstanta
 ```
@@ -161,16 +161,16 @@ A teď si ukážeme rozdíl mezi primitivními a Objektovými datovými typy a c
 
 ```js
 // definice opravdové konstanty s primitivním datovým typem
-const PI = 3.14159265359;
+const PI = 3.14159265359
 //...
-PI = 3.15;
+PI = 3.15
 // -> Chyba! Konstanta uz má přiřazeno jiné číslo.
 
-const clovek = { jmeno: "Karel", vek: 21 };
+const clovek = { jmeno: "Karel", vek: 21 }
 
-clovek.jmeno = "Melichar";
+clovek.jmeno = "Melichar"
 
-console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
+console.log(clovek) // -> {jmeno: "Melichar", vek: 21}
 ```
 
 ![objekt vs primitiv](./tent1.png)
@@ -181,42 +181,42 @@ console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
 
 ```js
 function nejakaFunkce() {
-  var jedna = 1;
-  let bedna = "bedna";
+  var jedna = 1
+  let bedna = "bedna"
 
   if (true) {
-    var deset = 10;
-    let peset = "pesos";
+    var deset = 10
+    let peset = "pesos"
   }
 
-  console.log(jedna); // -> 1
-  console.log(bedna); // -> 'bedna'
-  console.log(deset); // -> 10
-  console.log(peset); // -> Chyba! peset neni definovano!
+  console.log(jedna) // -> 1
+  console.log(bedna) // -> 'bedna'
+  console.log(deset) // -> 10
+  console.log(peset) // -> Chyba! peset neni definovano!
 }
 ```
 
 Redeklarace:
 
 ```js
-let cislo = 5;
-let cislo = 8;
+let cislo = 5
+let cislo = 8
 // -> Chyba! Proměnná číslo už existuje
 
-var num = 4;
-var num = 8;
+var num = 4
+var num = 8
 // -> Vše OK ... to ale my nechceme! Chceme vědět, že jsme někde přepsali proměnnou
 ```
 
 U var můžeme inicializovat proměnnou nad její deklarací
 
 ```js
-cislo = 5;
-var cislo;
+cislo = 5
+var cislo
 // funguje (kvůli něčemu čemu říkáme hoisting - vyzdvižení)
 
-num = 5;
-let num;
+num = 5
+let num
 // opraveno .. žádný hoisting .. toto nefunguje!
 ```
 
@@ -227,15 +227,15 @@ Definice funkcí a deklarace proměnných pomoví slovíčka **var** jsou tzv. h
 Takže se z:
 
 ```js
-mojeFunkce(); // zavolání/spuštění funkce
+mojeFunkce() // zavolání/spuštění funkce
 
-num = 5; //inicializace proměnné
+num = 5 //inicializace proměnné
 
-var num; // deklarace proměnné
+var num // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return "neco";
+  return "neco"
 }
 ```
 
@@ -244,17 +244,17 @@ stane:
 ```js
 // --- toto bylo vyzdvizeno ---
 
-var num; // deklarace proměnné
+var num // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return "neco";
+  return "neco"
 }
 // ----------------------------
 
-mojeFunkce(); // zavolání/spuštění funkce
+mojeFunkce() // zavolání/spuštění funkce
 
-num = 5; //inicializace proměnné
+num = 5 //inicializace proměnné
 ```
 
 ## Pozor na
@@ -263,17 +263,17 @@ Není možné deklarovat proměnnou pojmenovanou jako nějaký 'keyword' z jazyk
 
 ```js
 // např.:
-let var = "ahoj";
-const for = "svete";
-var while = "JS";
+let var = "ahoj"
+const for = "svete"
+var while = "JS"
 // atd.
 ```
 
 Podobně, není možné deklarovat/definovat jméno proměnné která již existuje:
 
 ```js
-let zprava = "ahoj";
-let zprava = "svete";
+let zprava = "ahoj"
+let zprava = "svete"
 ```
 
 # Materiály:
