@@ -42,7 +42,7 @@ let cislo* = "NEFUNGUJE .. nepovoleny znak ve jmene promenne"
 
 ### Pozor na:
 
-Není možné jako jméno proměnné použít 'keyword' z jazyka JS.
+Není možné jako jméno proměnné použít **keyword** z jazyka JS.
 
 ```js
 // např.:
