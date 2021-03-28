@@ -86,7 +86,7 @@ typeof function () {}
 
 je funkce brána jako datový typ ***object***. Můžeme to brát tak, že je to speciální typ objektu .. podmnožina objektu.
 
-## Obrázek může být lepší než tisíc slov
+## Obrázek *může* říci více než tisíc slov
 
 ```js
 let message = "Hello"
