@@ -1,5 +1,14 @@
 # Proměnné - let, const, var
 
+```js
+// nový zápis
+let promenna1 = 1;
+const promenna2 = 2;
+
+// zastaralý zápis
+var promenna3 = 3;
+```
+
 Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): **let**, **const** a **var**.
 
 ## var
@@ -84,14 +93,15 @@ let cislo;
 
 Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah bude teda defaultně **undefined**.
 
-##  Initializing (inicializace)
+## Initializing (inicializace)
+
 Až později ji můžeme využít k podržení např. čísla osm (inicializace):
 
 ```js
 cislo = 8;
 ```
 
-##  Definice (definice -> deklarace a zároveň inicializace)
+## Definice (definice -> deklarace a zároveň inicializace)
 
 ```js
 let cislo = 5;
@@ -119,8 +129,8 @@ První způsob zápisu oddělený čárkami můžeme 'roztáhnout' přes několi
 
 ```js
 let clovek = "Pepa",
-  vek = 25,
-  zprava = "ahoj lidi";
+    vek = 25,
+    zprava = "ahoj lidi";
 
 // nebo i s čárkami vepředu
 
@@ -167,7 +177,7 @@ console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
 
 ## Problémy s **var** a jak je řeší **let/const**
 
-***block scope*** vs ***function scope***
+**_block scope_** vs **_function scope_**
 
 ```js
 function nejakaFunkce() {
@@ -186,63 +196,67 @@ function nejakaFunkce() {
 }
 ```
 
-Redeklarace: 
-```js
-  let cislo = 5
-  let cislo = 8
-  // -> Chyba! Proměnná číslo už existuje
+Redeklarace:
 
-  var num = 4
-  var num = 8
-  // -> Vše OK ... to ale my nechceme! Chceme vědět, že jsme někde přepsali proměnnou
+```js
+let cislo = 5;
+let cislo = 8;
+// -> Chyba! Proměnná číslo už existuje
+
+var num = 4;
+var num = 8;
+// -> Vše OK ... to ale my nechceme! Chceme vědět, že jsme někde přepsali proměnnou
 ```
 
 U var můžeme inicializovat proměnnou nad její deklarací
-```js
-  cislo = 5
-  var cislo
-  // funguje (kvůli něčemu čemu říkáme hoisting - vyzdvižení)
 
-  num = 5
-  let num
-  // opraveno .. žádný hoisting .. toto nefunguje! 
+```js
+cislo = 5;
+var cislo;
+// funguje (kvůli něčemu čemu říkáme hoisting - vyzdvižení)
+
+num = 5;
+let num;
+// opraveno .. žádný hoisting .. toto nefunguje!
 ```
 
 ## Hoisting (vyzdvižení)
+
 Definice funkcí a deklarace proměnných pomoví slovíčka **var** jsou tzv. hoisted - vyzdviženy. Můžete si to představit tak, že ještě než JS kód spustí, si ho celý projde a všechny deklarace pomocí **var** a všechny definice funkce přesune na vrch kódu.
 
 Takže se z:
+
 ```js
+mojeFunkce(); // zavolání/spuštění funkce
 
-mojeFunkce() // zavolání/spuštění funkce
+num = 5; //inicializace proměnné
 
-num = 5 //inicializace proměnné
-
-var num // deklarace proměnné
+var num; // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return 'neco'
+  return "neco";
 }
 ```
-stane: 
+
+stane:
+
 ```js
 // --- toto bylo vyzdvizeno ---
 
-var num // deklarace proměnné
+var num; // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return 'neco'
+  return "neco";
 }
 // ----------------------------
 
+mojeFunkce(); // zavolání/spuštění funkce
 
-mojeFunkce() // zavolání/spuštění funkce
-
-num = 5 //inicializace proměnné
-
+num = 5; //inicializace proměnné
 ```
+
 ## Pozor na
 
 Není možné deklarovat proměnnou pojmenovanou jako nějaký 'keyword' z jazyka JS.
@@ -261,11 +275,6 @@ Podobně, není možné deklarovat/definovat jméno proměnné která již exist
 let zprava = "ahoj";
 let zprava = "svete";
 ```
-
-
-
-
-
 
 # Materiály:
 
