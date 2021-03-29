@@ -25,7 +25,7 @@ const DEAD_COLOR = "#fb3333";
 const diffs = {
   easy: { text: "Easy", lives: 10, element: "easyButton" },
   normal: { text: "Normal", lives: 7, element: "normalButton" },
-  hard: { text: "Hard", lives: 4, element: "hardButton" },
+  hard: { text: "Hard", lives: 5, element: "hardButton" },
 };
 
 let difficulty = diffs.normal;
