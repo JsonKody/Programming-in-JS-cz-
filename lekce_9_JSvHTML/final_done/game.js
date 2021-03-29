@@ -3,7 +3,7 @@ const startButton = document.getElementById("startButton");
 const endMessage = document.getElementById("endMessage");
 const difficultyElement = document.getElementById("difficulty");
 
-let isEnd = false
+let isEnd = false;
 
 const easyButton = document.getElementById("easyButton");
 const normalButton = document.getElementById("normalButton");
@@ -23,23 +23,26 @@ const WIN_COLOR = "#00ffad";
 const DEAD_COLOR = "#fb3333";
 
 const diffs = {
-  easy: { text: "Easy", lives: 10, element: 'easyButton' },
-  normal: { text: "Normal", lives: 7, element: 'normalButton' },
-  hard: { text: "Hard", lives: 4, element: 'hardButton' },
+  easy: { text: "Easy", lives: 10, element: "easyButton" },
+  normal: { text: "Normal", lives: 7, element: "normalButton" },
+  hard: { text: "Hard", lives: 4, element: "hardButton" },
 };
 
 let difficulty = diffs.normal;
 
+let nahodneCislo;
 let MAX_LIVES = 10;
 let lives;
 startGame();
 
+
 function startGame() {
+  nahodneCislo = vygenerujNahodneCislo();
   easyButton.classList.add("opacity-30");
   normalButton.classList.add("opacity-30");
   hardButton.classList.add("opacity-30");
 
-  eval(`${difficulty.element}.classList.remove("opacity-30")`)
+  eval(`${difficulty.element}.classList.remove("opacity-30")`);
 
   MAX_LIVES = difficulty.lives;
   difficultyElement.textContent = difficulty.text;
@@ -51,15 +54,21 @@ function startGame() {
   hide(startButton);
   hide(endMessage);
   show(gameControlWindow);
-  isEnd = false
+  isEnd = false;
   input.focus();
+  bodyColor();
+}
+
+// funkce: generuje nahodneCislo 1-100
+function vygenerujNahodneCislo() {
+  return Math.floor(Math.random() * 100 + 1);
 }
 
 generateLives();
 // 🎉
 function generateLives() {
   if (lives <= 0) {
-    isEnd = true
+    isEnd = true;
     livesElement.textContent = "💀";
     livesElement.classList.add("text-5xl");
     deathsElement.textContent = "";
@@ -68,6 +77,7 @@ function generateLives() {
     show(endMessage);
     show(startButton);
     hide(gameControlWindow);
+    bodyColor();
     return;
   }
 
@@ -75,13 +85,6 @@ function generateLives() {
   livesElement.textContent = hearths.join("");
   const deaths = Array(MAX_LIVES - lives).fill("🖤");
   deathsElement.textContent = deaths.join("");
-}
-
-let nahodneCislo = vygenerujNahodneCislo();
-
-// funkce: generuje nahodneCislo 1-100
-function vygenerujNahodneCislo() {
-  return Math.floor(Math.random() * 100 + 1);
 }
 
 // hlida zmacknuti buttonu
@@ -132,7 +135,7 @@ function porovnejCisla() {
     nahodneCislo: ${nahodneCislo}`);
 
   if (tip == nahodneCislo) {
-    isEnd = true
+    isEnd = true;
     livesElement.textContent = "🎉";
     livesElement.classList.add("text-5xl");
     deathsElement.textContent = "";
@@ -141,6 +144,7 @@ function porovnejCisla() {
     show(endMessage);
     show(startButton);
     hide(gameControlWindow);
+    bodyColor();
   } else {
     lives -= 1;
     generateLives();
@@ -162,4 +166,19 @@ function hide(element) {
 
 function show(element) {
   element.classList.remove("hidden");
+}
+
+function bodyColor() {
+  if (isEnd) {
+    if (lives) {
+      // vyhra
+      document.querySelector("body").style.background = "#5c25b5";
+    } else {
+      // prohra
+      document.querySelector("body").style.background = "#16072d";
+    }
+  } else {
+    // default
+    document.querySelector("body").style.background = "#3c1a73";
+  }
 }
