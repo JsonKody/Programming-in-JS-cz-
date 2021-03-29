@@ -131,7 +131,7 @@ function porovnejCisla() {
     livesElement.classList.add("text-5xl");
     deathsElement.textContent = "";
     endMessage.style.color = WIN_COLOR;
-    endMessage.textContent = "Výborně, vyhrál jsi 👍\nMůžeš hrát znovu 😄";
+    endMessage.textContent = "Výborně, vyhrál jsi 👍";
     show(endMessage);
     show(startButton);
     hide(gameControlWindow);
