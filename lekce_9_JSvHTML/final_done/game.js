@@ -3,6 +3,8 @@ const startButton = document.getElementById("startButton");
 const endMessage = document.getElementById("endMessage");
 const difficultyElement = document.getElementById("difficulty");
 
+let isEnd = false
+
 const easyButton = document.getElementById("easyButton");
 const normalButton = document.getElementById("normalButton");
 const hardButton = document.getElementById("hardButton");
@@ -49,12 +51,15 @@ function startGame() {
   hide(startButton);
   hide(endMessage);
   show(gameControlWindow);
+  isEnd = false
+  input.focus();
 }
 
 generateLives();
 // 🎉
 function generateLives() {
   if (lives <= 0) {
+    isEnd = true
     livesElement.textContent = "💀";
     livesElement.classList.add("text-5xl");
     deathsElement.textContent = "";
@@ -103,7 +108,7 @@ hardButton.addEventListener("click", function (e) {
 
 // hlida zmacknuti Enteru
 addEventListener("keyup", function (e) {
-  if (lives <= 0) {
+  if (isEnd) {
     startGame();
   }
   if (e.keyCode === 13) {
@@ -127,6 +132,7 @@ function porovnejCisla() {
     nahodneCislo: ${nahodneCislo}`);
 
   if (tip == nahodneCislo) {
+    isEnd = true
     livesElement.textContent = "🎉";
     livesElement.classList.add("text-5xl");
     deathsElement.textContent = "";
