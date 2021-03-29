@@ -8,24 +8,54 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
 
   <body>
+    <div class="absolute top-0 right-0">
+      <div
+        class="flex px-2 m-4 mb-1 border border-purple-500 bg-purple-900 opacity-50 rounded-lg"
+      >
+        <div title="Easy"
+          id="easyButton"
+          class="text-2xl m-2 mx-1 border border-purple-300 bg-purple-900 opacity-30 p-3 rounded-lg transition duration-500 hover:opacity-100 cursor-pointer"
+        >
+          👶
+        </div>
+        <div title="Normal"
+          id="normalButton"
+          class="text-2xl m-2 mx-1 border border-purple-300 bg-purple-900 opacity-30 p-3 rounded-lg transition duration-500 hover:opacity-100 cursor-pointer"
+        >
+          🙂
+        </div>
+        <div title="Hard"
+          id="hardButton"
+          class="text-2xl m-2 mx-1 border border-purple-300 bg-purple-900 opacity-30 p-3 rounded-lg transition duration-500 hover:opacity-100 cursor-pointer"
+        >
+          ☠️
+        </div>
+      </div>
+      <p
+        id="difficulty"
+        class="opacity-40 text-white text-xl font-mono flex justify-center"
+      ></p>
+    </div>
     <div
       class="font-mono bg-purple-800 flex h-screen items-center justify-center"
     >
       <div>
-        <p class="flex justify-center my-1"><span id="lives"></span><span id="deaths" class="opacity-30"></span></p>
+        <p class="flex justify-center my-1">
+          <span id="lives"></span><span id="deaths" class="opacity-30"></span>
+        </p>
         <div
+          id="gameControlWindow"
           class="p-6 bg-purple-900 rounded-lg border border-purple-500 text-green-500 text-xl flex justify-center items-center flex-col"
         >
-          <h1 id="zprava" class="flex justify-center text-purple-300">Uhodni číslo ... 1-100</h1>
+          <h1 id="zprava" class="flex justify-center text-purple-300"></h1>
 
           <input
             id="input"
             type="text"
-            class="text-black my-4 rounded border border-purple-500 ring-0 focus:ring-0 transition duration-150"
+            class="text-center text-black my-4 rounded border border-purple-500 ring-0 focus:ring-0 transition duration-150"
           />
           <button
             id="button"
@@ -34,6 +64,18 @@
             Hádat
           </button>
           <p id="odpoved" class="hidden"></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1
+            id="endMessage"
+            class="my-2 flex justify-center text-purple-300"
+          ></h1>
+          <button
+            id="startButton"
+            class="mx-2 bg-purple-700 border border-purple-900 opacity-50 transition duration-300 hover:opacity-100 text-white rounded px-2 mt-2"
+          >
+            Hrát znovu
+          </button>
         </div>
       </div>
     </div>
