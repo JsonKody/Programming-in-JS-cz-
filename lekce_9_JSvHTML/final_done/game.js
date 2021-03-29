@@ -21,9 +21,9 @@ const WIN_COLOR = "#00ffad";
 const DEAD_COLOR = "#fb3333";
 
 const diffs = {
-  easy: { text: "Easy", lives: 10 },
-  normal: { text: "Normal", lives: 7 },
-  hard: { text: "Hard", lives: 4 },
+  easy: { text: "Easy", lives: 10, element: 'easyButton' },
+  normal: { text: "Normal", lives: 7, element: 'normalButton' },
+  hard: { text: "Hard", lives: 4, element: 'hardButton' },
 };
 
 let difficulty = diffs.normal;
@@ -33,6 +33,12 @@ let lives;
 startGame();
 
 function startGame() {
+  easyButton.classList.add("opacity-30");
+  normalButton.classList.add("opacity-30");
+  hardButton.classList.add("opacity-30");
+
+  eval(`${difficulty.element}.classList.remove("opacity-30")`)
+
   MAX_LIVES = difficulty.lives;
   difficultyElement.textContent = difficulty.text;
   lives = MAX_LIVES;
