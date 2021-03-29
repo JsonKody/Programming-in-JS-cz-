@@ -37,6 +37,8 @@ startGame();
 
 
 function startGame() {
+  isEnd = false;
+  bodyColor();
   nahodneCislo = vygenerujNahodneCislo();
   easyButton.classList.add("opacity-30");
   normalButton.classList.add("opacity-30");
@@ -50,13 +52,11 @@ function startGame() {
   livesElement.classList.remove("text-5xl");
   generateLives();
   zprava.style.color = NEUTRAL_COLOR;
-  zprava.textContent = "Uhodni číslo ... 1-100";
   hide(startButton);
   hide(endMessage);
   show(gameControlWindow);
-  isEnd = false;
   input.focus();
-  bodyColor();
+  zprava.textContent = "Uhodni číslo ... 1-100";
 }
 
 // funkce: generuje nahodneCislo 1-100
@@ -113,6 +113,7 @@ hardButton.addEventListener("click", function (e) {
 addEventListener("keyup", function (e) {
   if (isEnd) {
     startGame();
+    return
   }
   if (e.keyCode === 13) {
     porovnejCisla();
