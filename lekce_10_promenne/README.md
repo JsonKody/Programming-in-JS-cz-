@@ -287,3 +287,5 @@ num = 5 //inicializace proměnné
 ### Eloquent JavaScript: https://eloquentjavascript.net/index.html
 
 ### Javascript info: https://javascript.info/variables
+
+### thisthat.dev: https://thisthat.dev/const-vs-let-vs-var
