@@ -2,7 +2,7 @@
 
 *Zkusime si jeste zapsat string se zpetnym lomitkem uvnitr*
 
-```javascript
+```js
 let message = "takto zapiseme zpetne lomitko \\"
 console.log(message)
 
@@ -16,7 +16,7 @@ console.log(message)
 
 Da se zapsat pred vyrazem nebo za vyrazem, pokud se pouziva tak se ale bezne pise "za".
 
-```javascript
+```js
 let a = 4
 a++
 
