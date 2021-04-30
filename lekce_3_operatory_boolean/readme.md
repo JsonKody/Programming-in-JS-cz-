@@ -2,7 +2,7 @@
 
 *Zkusime si jeste zapsat string se zpetnym lomitkem uvnitr*
 
-```javascript
+```js
 let message = "takto zapiseme zpetne lomitko \\"
 console.log(message)
 
@@ -16,7 +16,7 @@ console.log(message)
 
 Da se zapsat pred vyrazem nebo za vyrazem, pokud se pouziva tak se ale bezne pise "za".
 
-```javascript
+```js
 let a = 4
 a++
 
@@ -25,7 +25,7 @@ console.log(a) // -> 5
 
 *Pozn.: jednoradkovy komentar muzete zapsat na stejnem radku jako prikaz, proste ho napise za nej.*
 
-```javascript
+```js
 let a = 1
 let b = a++ + 1  // a=2, b=2
 let c = ++a + 1  // a=3, c=4
@@ -33,7 +33,7 @@ let c = ++a + 1  // a=3, c=4
 
 Pozn.: *operatory delime na ***unarni***, ***binarni*** a ***ternarni*** (unary/binary/ternary). Nebojte je to jednoduche. Jde jen o to kolik prvku ovlivnuji, unarni 'pracuje' s jednim prvkem, binarni se dvema a ternarni ma tri kolonky :) *
 
-```javascript
+```js
 // unarni
 -1
 +0
@@ -56,7 +56,7 @@ podminka ? ano : ne
 Aby se s operatory pracovalo lepe maji nektere operatory vetsi vahu/prednost nez jine. Obecne si to nemusite prilis pamatovat protoze je to udelane tak aby to davalo smysl. 
 
 napr.:
-```javascript
+```js
 let cislo  =  1 + 2 * 3
 let cislo2 = (1 + 2) * 3
 
@@ -71,7 +71,7 @@ Typ boolean obsahuje jen dve hodnoty:
 - true (pravda)
 - false (lez)
 
-```javascript
+```js
 let pravda = true
 
 let lez = false
@@ -93,7 +93,7 @@ let lez = false
   
 - ! (negace, opak, 'neni')
 
-```javascript
+```js
 let a = 4
 
 a < 3       // -> false
@@ -115,7 +115,7 @@ Docela pekna vlastnost je ale truthy/falsy, cesky bysme rekli asi neco jako prav
 
 Jde o to ze kdyz chceme nekde typ Boolean tzn. pravdu nebo lez ale misto toho dostaneme jen cislo, nebo treba string jak JS rozhodne jestli to prevede na 'true' nebo 'false'?
 
-```javascript
+```js
 !!""        // -> false
 !!"ahoj"    // -> true
 !!"false"   // -> true
@@ -130,7 +130,7 @@ Jde o to ze kdyz chceme nekde typ Boolean tzn. pravdu nebo lez ale misto toho do
 
 
 ## zkuste vyresit tenhle maly problem:
-```javascript
+```js
 // promenna a = 3, b = 8
 // zkuste jejich hodnoty prohodit bez toho abyste je primo napsali cislo
 
