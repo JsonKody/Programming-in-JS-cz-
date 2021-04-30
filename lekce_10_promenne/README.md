@@ -2,14 +2,14 @@
 
 ```js
 // nový zápis
-let promenna1 = 1
-const promenna2 = 2
+let promenna1 = 1;
+const promenna2 = 2;
 
 // zastaralý zápis
-var promenna3 = 3
+var promenna3 = 3;
 ```
 
-Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): ```let, const a var```
+Dosud jsme pro vytvoření nové proměnné používali pouze slovíčko **let**, ale ve skutečnosti má JS pro proměnné tři různá slovíčka (keyword): `let, const a var`
 
 ## var
 
@@ -25,6 +25,7 @@ Jako konstant -> konstanta.\
 Ve všem, až na jeden malý detail je **const** shodné s **let**. Narozdíl od **let**, ale jednou naplněné **const** už nelze naplnit jinou hodnotou.
 
 ## Opakování je matka ...
+
 ![matka](./mother.png)
 
 Jméno proměnné je složeno z písmen a čísel, ALE nesmí začínat číslem.
@@ -47,46 +48,45 @@ Není možné jako jméno proměnné použít **keyword** z jazyka JS.
 
 ```js
 // např.:
-let var = "ahoj"
-const for = "svete"
-var while = "JS"
+let var = "ahoj";
+const for = "svete";
+var while = "JS";
 // atd.
 ```
 
 A samozřejmě, není možné vytvořit proměnnou se jménem, která již používá jiná proměnná (ve stejném **scopu**):
 
 ```js
-let zprava = "ahoj"
-let zprava = "svete"
+let zprava = "ahoj";
+let zprava = "svete";
 ```
 
 Proměnné jsou tzv. dynamicky typované - mohou obsahovat jakýkoliv typ:
 
 ```js
-let x = 5
-x = "Jablko"
+let x = 5;
+x = "Jablko";
 ```
 
 Je osm datových typů:
 
 1. **number** pro čísla (celá i desetinná),
-1. **string** pro řetězce - prostě posloupnost znaků jako např. ***"ahoj"***,
-1. **boolean** pro logické hodnoty - ***true/false*** (pravda/lež),
+1. **string** pro řetězce - prostě posloupnost znaků jako např. **_"ahoj"_**,
+1. **boolean** pro logické hodnoty - **_true/false_** (pravda/lež),
 1. **object** – pro komplexní datové struktury
-1. **undefined** – typ s jedinou hodnotou ***undefined***, což znamená ***prázdný - zatím jsi sem nic nedal***
-1. **null** – typ s jedinou hodnotou ***null***, což znamená něco jako ***prázdný*** nebo ***nic tu není***
+1. **undefined** – typ s jedinou hodnotou **_undefined_**, což znamená **_prázdný - zatím jsi sem nic nedal_**
+1. **null** – typ s jedinou hodnotou **_null_**, což znamená něco jako **_prázdný_** nebo **_nic tu není_**
 1. **bigint** pro obrovská celá čísla (nebudeme používat)
 1. **symbol** pro unikátní identifikátory (nebudeme používat)
 
-
-## Obrázek *může* říci více než tisíc slov
+## Obrázek _může_ říci více než tisíc slov
 
 ```js
-let message = "Hello"
+let message = "Hello";
 
 //...
 
-message = "World!"
+message = "World!";
 ```
 
 ![let box](./let1.png)\
@@ -100,7 +100,7 @@ message = "World!"
 ## Declaration (deklarace)
 
 ```js
-let cislo
+let cislo;
 ```
 
 Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah bude teda defaultně **undefined**.
@@ -110,16 +110,17 @@ Proměnná je vytvořena, ALE ještě jsme jí nedali žádná data. Její obsah
 Až později ji můžeme využít k podržení např. čísla osm (inicializace):
 
 ```js
-cislo = 8
+cislo = 8;
 ```
+
 **Pozn.:**\
-```=``` toto není "rovná se", je to "operátor přiřazení".\
-V JS se "rovná se" píše takto: ```==``` nebo takto ```===```
+`=` toto není "rovná se", je to "operátor přiřazení".\
+V JS se "rovná se" píše takto: `==` nebo takto `===`
 
 ## Definition (definice -> deklarace a zároveň inicializace)
 
 ```js
-let cislo = 5
+let cislo = 5;
 ```
 
 Proměnná je vytvořena (deklarace), a rovnou jsme jí předali číslo **5** (inicializace).
@@ -129,29 +130,31 @@ Proměnná je vytvořena (deklarace), a rovnou jsme jí předali číslo **5** (
 Je možné definovat si několik proměnných za sebou pouze oddělených čárkami.
 
 ```js
-let clovek = "Pepa", vek = 25, zprava = "ahoj lidi"
+let clovek = "Pepa",
+  vek = 25,
+  zprava = "ahoj lidi";
 ```
 
 toto je shodné s tímto:
 
 ```js
-let clovek = "Pepa"
-let vek = 25
-let zprava = "ahoj lidi"
+let clovek = "Pepa";
+let vek = 25;
+let zprava = "ahoj lidi";
 ```
 
 První způsob zápisu oddělený čárkami můžeme 'roztáhnout' přes několik řádků:
 
 ```js
 let clovek = "Pepa",
-    vek = 25,
-    zprava = "ahoj lidi"
+  vek = 25,
+  zprava = "ahoj lidi";
 
 // nebo i s čárkami vepředu
 
-let clovek = "Pepa"
-  , vek = 25
-  , zprava = "ahoj lidi"
+let clovek = "Pepa",
+  vek = 25,
+  zprava = "ahoj lidi";
 ```
 
 ## Co znamená, že const lze definovat pouze jednou?
@@ -161,13 +164,13 @@ Obyčejné proměnné definované pomocí var nebo let jde měnit. Jednou do nic
 Např:.
 
 ```js
-const PI = 3.14159265359
+const PI = 3.14159265359;
 
 // ...
 // někde úplně jinde v kódu ...
 
 function vypocet(cislo) {
-  return cislo * PI
+  return cislo * PI;
 }
 // každému je jasné už ze zápisu velkými písmeny že PI je nějaká konstanta
 ```
@@ -176,16 +179,16 @@ A teď si ukážeme rozdíl mezi primitivními a Objektovými datovými typy a c
 
 ```js
 // definice opravdové konstanty s primitivním datovým typem
-const PI = 3.14159265359
+const PI = 3.14159265359;
 //...
-PI = 3.15
+PI = 3.15;
 // -> Chyba! Konstanta uz má přiřazeno jiné číslo.
 
-const clovek = { jmeno: "Karel", vek: 21 }
+const clovek = { jmeno: "Karel", vek: 21 };
 
-clovek.jmeno = "Melichar"
+clovek.jmeno = "Melichar";
 
-console.log(clovek) // -> {jmeno: "Melichar", vek: 21}
+console.log(clovek); // -> {jmeno: "Melichar", vek: 21}
 ```
 
 ![objekt vs primitiv](./tent1.png)
@@ -196,42 +199,42 @@ console.log(clovek) // -> {jmeno: "Melichar", vek: 21}
 
 ```js
 function nejakaFunkce() {
-  var jedna = 1
-  let bedna = "bedna"
+  var jedna = 1;
+  let bedna = "bedna";
 
   if (true) {
-    var deset = 10
-    let peset = "pesos"
+    var deset = 10;
+    let peset = "pesos";
   }
 
-  console.log(jedna) // -> 1
-  console.log(bedna) // -> 'bedna'
-  console.log(deset) // -> 10
-  console.log(peset) // -> Chyba! peset neni definovano!
+  console.log(jedna); // -> 1
+  console.log(bedna); // -> 'bedna'
+  console.log(deset); // -> 10
+  console.log(peset); // -> Chyba! peset neni definovano!
 }
 ```
 
 Redeklarace:
 
 ```js
-let cislo = 5
-let cislo = 8
+let cislo = 5;
+let cislo = 8;
 // -> Chyba! Proměnná číslo už existuje
 
-var num = 4
-var num = 8
+var num = 4;
+var num = 8;
 // -> Vše OK ... to ale my nechceme! Chceme vědět, že jsme někde přepsali proměnnou
 ```
 
 U var můžeme inicializovat proměnnou nad její deklarací
 
 ```js
-cislo = 5
-var cislo
+cislo = 5;
+var cislo;
 // funguje (kvůli něčemu čemu říkáme hoisting - vyzdvižení)
 
-num = 5
-let num
+num = 5;
+let num;
 // opraveno .. žádný hoisting .. toto nefunguje!
 ```
 
@@ -242,15 +245,15 @@ Definice funkcí a deklarace proměnných pomoví slovíčka **var** jsou tzv. h
 Takže se z:
 
 ```js
-mojeFunkce() // zavolání/spuštění funkce
+mojeFunkce(); // zavolání/spuštění funkce
 
-num = 5 //inicializace proměnné
+num = 5; //inicializace proměnné
 
-var num // deklarace proměnné
+var num; // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return "neco"
+  return "neco";
 }
 ```
 
@@ -259,20 +262,18 @@ stane:
 ```js
 // --- toto bylo vyzdvizeno ---
 
-var num // deklarace proměnné
+var num; // deklarace proměnné
 
 //definice funkce
 function mojeFunkce() {
-  return "neco"
+  return "neco";
 }
 // ----------------------------
 
-mojeFunkce() // zavolání/spuštění funkce
+mojeFunkce(); // zavolání/spuštění funkce
 
-num = 5 //inicializace proměnné
+num = 5; //inicializace proměnné
 ```
-
-
 
 # Materiály:
 
