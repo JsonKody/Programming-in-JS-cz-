@@ -78,14 +78,6 @@ Je osm datových typů:
 1. **bigint** pro obrovská celá čísla (nebudeme používat)
 1. **symbol** pro unikátní identifikátory (nebudeme používat)
 
-**Pozn.:** přestože
-
-```js
-typeof function () {}
-// vypíše: 'function'
-```
-
-je funkce brána jako datový typ ***object***. Můžeme to brát tak, že je to speciální typ objektu .. podmnožina objektu.
 
 ## Obrázek *může* říci více než tisíc slov
 
