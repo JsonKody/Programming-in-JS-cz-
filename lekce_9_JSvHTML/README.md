@@ -1,5 +1,6 @@
 # JS v HTML (& CSS)
 [Video lekce na Youtube](https://www.youtube.com/watch?v=NizAHXlzYRY&list=PL62jh-_-s39rP2eTM6f4495QmvgcdtssP&index=9)
+
 [Odkaz na hru na Surge.sh](https://lekce9.surge.sh/)
 
 [Odkaz na kompletni verzi dle me ](https://hadej.surge.sh) (udelejte to kazdy podle sebe ;) )
