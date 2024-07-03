@@ -14,8 +14,7 @@ const button = document.getElementById("button");
 const odpoved = document.getElementById("odpoved");
 const zprava = document.getElementById("zprava");
 
-const livesElement = document.getElementById("lives");
-const deathsElement = document.getElementById("deaths");
+const liveDisplay = document.getElementById("lives");
 
 const BAD_COLOR = "#ff5cbe";
 const NEUTRAL_COLOR = "#c4b5fd";
@@ -35,7 +34,6 @@ let MAX_LIVES = 10;
 let lives;
 startGame();
 
-
 function startGame() {
   isEnd = false;
   bodyColor();
@@ -49,7 +47,7 @@ function startGame() {
   MAX_LIVES = difficulty.lives;
   difficultyElement.textContent = difficulty.text;
   lives = MAX_LIVES;
-  livesElement.classList.remove("text-5xl");
+  liveDisplay.classList.remove("text-5xl");
   generateLives();
   zprava.style.color = NEUTRAL_COLOR;
   hide(startButton);
@@ -62,29 +60,6 @@ function startGame() {
 // funkce: generuje nahodneCislo 1-100
 function vygenerujNahodneCislo() {
   return Math.floor(Math.random() * 100 + 1);
-}
-
-generateLives();
-// 🎉
-function generateLives() {
-  if (lives <= 0) {
-    isEnd = true;
-    livesElement.textContent = "💀";
-    livesElement.classList.add("text-5xl");
-    deathsElement.textContent = "";
-    endMessage.style.color = DEAD_COLOR;
-    endMessage.textContent = "To je zlé .. jsi mrkev 🥕";
-    show(endMessage);
-    show(startButton);
-    hide(gameControlWindow);
-    bodyColor();
-    return;
-  }
-
-  const hearths = Array(lives).fill("❤️");
-  livesElement.textContent = hearths.join("");
-  const deaths = Array(MAX_LIVES - lives).fill("🖤");
-  deathsElement.textContent = deaths.join("");
 }
 
 // hlida zmacknuti buttonu
@@ -113,7 +88,7 @@ hardButton.addEventListener("click", function (e) {
 addEventListener("keyup", function (e) {
   if (isEnd) {
     startGame();
-    return
+    return;
   }
   if (e.keyCode === 13) {
     porovnejCisla();
@@ -136,16 +111,7 @@ function porovnejCisla() {
     nahodneCislo: ${nahodneCislo}`);
 
   if (tip == nahodneCislo) {
-    isEnd = true;
-    livesElement.textContent = "🎉";
-    livesElement.classList.add("text-5xl");
-    deathsElement.textContent = "";
-    endMessage.style.color = WIN_COLOR;
-    endMessage.textContent = "Výborně, vyhrál jsi 👍";
-    show(endMessage);
-    show(startButton);
-    hide(gameControlWindow);
-    bodyColor();
+    setWinState();
   } else {
     lives -= 1;
     generateLives();
@@ -182,4 +148,47 @@ function bodyColor() {
     // default
     document.querySelector("body").style.background = "#3c1a73";
   }
+}
+
+function generateLives() {
+  if (lives <= 0) {
+    setDeadState();
+    return;
+  }
+
+  hearts = "";
+
+  for (let i = 0; i < MAX_LIVES; i++) {
+    if (i < lives) {
+      hearts += "❤️";
+    } else {
+      hearts += "🖤";
+    }
+  }
+
+  liveDisplay.textContent = hearts;
+}
+
+function setDeadState() {
+  isEnd = true;
+  liveDisplay.textContent = "💀";
+  liveDisplay.classList.add("text-5xl");
+  endMessage.style.color = DEAD_COLOR;
+  endMessage.textContent = "To je zlé .. jsi mrkev 🥕";
+  show(endMessage);
+  show(startButton);
+  hide(gameControlWindow);
+  bodyColor();
+}
+
+function setWinState() {
+  isEnd = true;
+  liveDisplay.textContent = "🎉";
+  liveDisplay.classList.add("text-5xl");
+  endMessage.style.color = WIN_COLOR;
+  endMessage.textContent = "Výborně, vyhrál jsi 👍";
+  show(endMessage);
+  show(startButton);
+  hide(gameControlWindow);
+  bodyColor();
 }
