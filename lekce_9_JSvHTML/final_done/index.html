@@ -16,14 +16,24 @@
       .diff > div {
         background: rgba(0, 0, 0, 0.11);
       }
+      
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
     </style>
   </head>
 
   <body class="p-4 transition duration-300">
     <div class="p-4 absolute top-0 right-0">
-      <div
-        class="flex px-2 mb-1 diff opacity-90 rounded-lg"
-      >
+      <div class="flex px-2 mb-1 diff opacity-90 rounded-lg">
         <div
           title="Easy"
           id="easyButton"
@@ -51,9 +61,7 @@
         class="opacity-40 text-white text-xl font-mono flex justify-center"
       ></p>
     </div>
-    <div
-      class="font-mono flex h-screen items-center justify-center"
-    >
+    <div class="font-mono flex h-screen items-center justify-center">
       <div>
         <p class="flex justify-center my-1">
           <!-- <img src="./life.png" alt="life"> -->

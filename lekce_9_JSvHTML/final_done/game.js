@@ -21,6 +21,9 @@ const NEUTRAL_COLOR = "#c4b5fd";
 const WIN_COLOR = "#00ffad";
 const DEAD_COLOR = "#fb3333";
 
+const MIN_NUM = 1;
+const MAX_NUM = 100;
+
 const diffs = {
   easy: { text: "Easy", lives: 10, element: "easyButton" },
   normal: { text: "Normal", lives: 7, element: "normalButton" },
@@ -37,7 +40,7 @@ startGame();
 function startGame() {
   isEnd = false;
   bodyColor();
-  nahodneCislo = vygenerujNahodneCislo();
+  nahodneCislo = vygenerujNahodneCislo(MIN_NUM, MAX_NUM);
   easyButton.classList.add("opacity-30");
   normalButton.classList.add("opacity-30");
   hardButton.classList.add("opacity-30");
@@ -54,12 +57,14 @@ function startGame() {
   hide(endMessage);
   show(gameControlWindow);
   input.focus();
-  zprava.textContent = "Uhodni číslo ... 1-100";
+  zprava.textContent = `Uhodni číslo ... ${MIN_NUM}-${MAX_NUM}`;
 }
 
 // funkce: generuje nahodneCislo 1-100
-function vygenerujNahodneCislo() {
-  return Math.floor(Math.random() * 100 + 1);
+function vygenerujNahodneCislo(min, max) {
+  const cislo = Math.floor(Math.random() * (max - min + 1) + min);
+  console.log(`Náhodné číslo: ${cislo}`);
+  return cislo;
 }
 
 // hlida zmacknuti buttonu
@@ -106,9 +111,11 @@ function porovnejCisla() {
     return;
   }
 
-  console.log(`
-    input: ${tip}
-    nahodneCislo: ${nahodneCislo}`);
+  if (tip < MIN_NUM || tip > MAX_NUM) {
+    zprava.style.color = NEUTRAL_COLOR;
+    zprava.textContent = `Hádej pouze čísla mezi ${MIN_NUM}-${MAX_NUM}`;
+    return;
+  }
 
   if (tip == nahodneCislo) {
     setWinState();
